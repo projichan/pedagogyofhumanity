@@ -16,27 +16,35 @@
             position: relative;
         }
     
-    .main-banner img {
-        max-width: 60%;  / You can adjust this percentage /
-        height: auto;
-        display: block;
-        margin: 0 auto;
-    }
-</style>
+   .main-banner {
+    width: 100%;
+    max-width: 800px;  / This prevents it from getting too wide /
+    margin: 20px auto;
+    padding: 0 20px;  / This gives some breathing room on mobile /
+}
 
+.main-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
-        .secondary-banners {
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-            margin: 60px 0;
-            align-items: center;
-        }
+.secondary-banners {
+    width: 100%;
+    max-width: 800px;  / Adjust this value as needed /
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
 
-        .secondary-banners img {
-            max-width: 90%;
-            height: auto;
-        }
+.secondary-banners img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 
         footer {
             position: absolute;
