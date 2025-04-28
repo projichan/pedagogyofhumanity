@@ -16,7 +16,7 @@
         }
 
         .main-banner {
-            width: 80%;
+            width: 80%; / This gives us the cushion on both sides /
             max-width: 800px;
             margin-top: 100px;
             display: flex;
@@ -29,8 +29,8 @@
         }
 
         .secondary-banners {
-            width: 60%; / Made smaller than main banner /
-            max-width: 600px; / Reduced max-width /
+            width: 80%;
+            max-width: 800px;
             margin-top: 80px;
             margin-bottom: 200px;
             display: flex;
@@ -39,13 +39,15 @@
             align-items: center;
         }
 
+        / Keeping the first two banners at their current size /
         .current-size {
-            width: 50%; / Making these significantly smaller /
+            width: auto;
             height: auto;
         }
 
+        / Last banner at 100% of container width /
         .full-width {
-            width: 75%; / Not quite full width now /
+            width: 100%;
             height: auto;
         }
 
@@ -55,7 +57,7 @@
             color: #313647;
             font-family: Garamond, serif;
             font-style: italic;
-            font-size: 16px; / Increased font size /
+            font-size: 12px;
             padding-bottom: 96px;
             margin-top: auto;
         }
