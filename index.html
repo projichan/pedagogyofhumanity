@@ -5,34 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedagogy of Humanity</title>
     <style>
-        / Add styling for your images /
-        .logo {
-            height: 80px; / adjust as needed /
-            margin: 10px;
+        body {
+            background-color: #d6dce1;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
         }
 
-        .banner {
-            width: 100%; / full width /
-            max-width: 1200px; / prevents getting too wide /
-            margin: 0 auto;
-            display: block;
+        .main-banner {
+            margin-top: 50px;
+            max-width: 90%;
+            height: auto;
+        }
+
+        .secondary-banners {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin: 60px 0;
+            align-items: center;
+        }
+
+        .secondary-banners img {
+            max-width: 90%;
+            height: auto;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 96px;
+            text-align: center;
+            width: 100%;
+            font-family: Arial, sans-serif;
         }
     </style>
 </head>
 <body>
-    <!-- Navigation with Logo -->
-    <nav>
-        <img src="images/logo.png" alt="Pedagogy of Humanity Logo" class="logo">
-        <a href="index.html">Home</a>
-        <a href="learn-more.html">Learn More</a>
-    </nav>
+    <!-- Main Banner -->
+    <img src="images/poh-text-banner.png" alt="Pedagogy of Humanity" class="main-banner">
 
-    <!-- Main Content -->
-    <div class="main-content">
-        <div class="hero-section">
-          <img src="images/poh-text-banner.png" alt="Welcome Banner" class="banner">
-            <h1>Pedagogy of Humanity</h1>
-        </div>
+    <!-- Secondary Banners -->
+    <div class="secondary-banners">
+        <img src="images/in-all-things-teach-banner.png" alt="In All Things Teach">
+        <img src="images/no-act-banner.png" alt="No Act">
+        <img src="images/safety-is-banner.png" alt="Safety Is">
     </div>
+
+    <!-- Footer -->
+    <footer>
+        © 2025 Brittany L. Stratton. Pedagogy of Humanity ™. All Rights Reserved.
+    </footer>
 </body>
 </html>
