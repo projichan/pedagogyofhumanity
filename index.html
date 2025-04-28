@@ -16,7 +16,7 @@
         }
 
         .main-banner {
-            width: 80%;
+            width: 80%; / This gives us the cushion on both sides /
             max-width: 800px;
             margin-top: 100px;
             display: flex;
@@ -39,19 +39,15 @@
             align-items: center;
         }
 
-        / Reduced sizes for secondary banners /
-        .banner-small {
-            width: 30%; / Significantly smaller /
+        / Keeping the first two banners at their current size /
+        .current-size {
+            width: auto;
             height: auto;
         }
 
-        .banner-medium {
-            width: 45%; / Medium size /
-            height: auto;
-        }
-
-        .banner-large {
-            width: 60%; / Larger but not full width /
+        / Last banner at 100% of container width /
+        .full-width {
+            width: 100%;
             height: auto;
         }
 
@@ -61,7 +57,7 @@
             color: #313647;
             font-family: Garamond, serif;
             font-style: italic;
-            font-size: 18px; / Increased footer size /
+            font-size: 12px;
             padding-bottom: 96px;
             margin-top: auto;
         }
@@ -75,9 +71,9 @@
 
     <!-- Secondary Banners -->
     <div class="secondary-banners">
-        <img src="assets/in-all-things-teach-banner.png" alt="In All Things Teach" class="banner-small">
-        <img src="images/no-act-banner.png" alt="No Act" class="banner-medium">
-        <img src="images/safety-is-banner.png" alt="Safety Is" class="banner-large">
+        <img src="assets/in-all-things-teach-banner.png" alt="In All Things Teach" class="current-size">
+        <img src="images/no-act-banner.png" alt="No Act" class="current-size">
+        <img src="images/safety-is-banner.png" alt="Safety Is" class="full-width">
     </div>
 
     <!-- Footer -->
