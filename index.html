@@ -13,8 +13,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            position: relative;
-            overflow-x: hidden; / Prevent horizontal scroll /
+            overflow-x: hidden;
         }
 
         .main-banner {
@@ -36,12 +35,12 @@
             width: 100%;
             max-width: 800px;
             margin-top: 80px;
-            margin-bottom: 120px; / Add space for footer /
             padding: 0 20px;
             display: flex;
             flex-direction: column;
             gap: 60px;
             align-items: center;
+            margin-bottom: 200px; / Added more space at bottom /
         }
 
         .banner-35 {
@@ -57,18 +56,17 @@
         .banner-125 {
             width: 125%;
             display: block;
-            max-width: 1000px; / Prevent excessive width /
         }
 
         footer {
-            position: fixed; / Changed from absolute /
-            bottom: 96px;
-            text-align: center;
             width: 100%;
+            text-align: center;
             color: #313647;
             font-family: Garamond, serif;
             font-style: italic;
             font-size: 12px;
+            padding-bottom: 96px;
+            margin-top: auto; / This pushes the footer to the bottom /
         }
     </style>
 </head>
