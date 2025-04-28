@@ -5,39 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedagogy of Humanity</title>
     <style>
-        / Basic styling to start /
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
+        / Add styling for your images /
+        .logo {
+            height: 80px; / adjust as needed /
+            margin: 10px;
         }
 
-        nav {
-            background-color: #333;
-            padding: 1rem;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-right: 20px;
-        }
-
-        .main-content {
-            padding: 20px;
-            max-width: 1200px;
+        .banner {
+            width: 100%; / full width /
+            max-width: 1200px; / prevents getting too wide /
             margin: 0 auto;
-        }
-
-        .hero-section {
-            text-align: center;
-            padding: 50px 20px;
+            display: block;
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Navigation with Logo -->
     <nav>
+        <img src="images/logo.png" alt="Pedagogy of Humanity Logo" class="logo">
         <a href="index.html">Home</a>
         <a href="learn-more.html">Learn More</a>
     </nav>
@@ -45,11 +30,9 @@
     <!-- Main Content -->
     <div class="main-content">
         <div class="hero-section">
+            <img src="images/banner.png" alt="Welcome Banner" class="banner">
             <h1>Pedagogy of Humanity</h1>
-            <p>Your main message or tagline here</p>
         </div>
-        
-        <!-- Add more sections as needed -->
     </div>
 </body>
 </html>
