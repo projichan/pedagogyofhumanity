@@ -13,14 +13,12 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            overflow-x: hidden;
         }
 
         .main-banner {
-            width: 100%;
+            width: 80%; / This gives us the cushion on both sides /
             max-width: 800px;
             margin-top: 100px;
-            padding: 0 60px;
             display: flex;
             justify-content: center;
         }
@@ -28,38 +26,29 @@
         .main-banner img {
             width: 100%;
             height: auto;
-            display: block;
         }
 
         .secondary-banners {
-            width: 100%;
-            max-width: 1000px; / Increased to accommodate larger last banner /
+            width: 80%;
+            max-width: 800px;
             margin-top: 80px;
-            padding: 0 20px;
+            margin-bottom: 200px;
             display: flex;
             flex-direction: column;
             gap: 60px;
             align-items: center;
-            margin-bottom: 200px;
         }
 
-        .banner-35 {
-            width: 35%;
-            display: block;
+        / Keeping the first two banners at their current size /
+        .current-size {
+            width: auto;
+            height: auto;
         }
 
-        .banner-80 {
-            width: 80%;
-            display: block;
-        }
-
-        .banner-125 {
-            width: 100%; / Changed from 125% /
-            max-width: 1000px; / Set a max-width instead /
-            display: block;
-            transform: scale(1.25); / This will make it 125% while maintaining stability /
-            transform-origin: center center;
-            margin: 20px 0; / Add some margin to account for the scaling /
+        / Last banner at 100% of container width /
+        .full-width {
+            width: 100%;
+            height: auto;
         }
 
         footer {
@@ -82,9 +71,9 @@
 
     <!-- Secondary Banners -->
     <div class="secondary-banners">
-        <img src="assets/in-all-things-teach-banner.png" alt="In All Things Teach" class="banner-35">
-        <img src="images/no-act-banner.png" alt="No Act" class="banner-80">
-        <img src="images/safety-is-banner.png" alt="Safety Is" class="banner-125">
+        <img src="assets/in-all-things-teach-banner.png" alt="In All Things Teach" class="current-size">
+        <img src="images/no-act-banner.png" alt="No Act" class="current-size">
+        <img src="images/safety-is-banner.png" alt="Safety Is" class="full-width">
     </div>
 
     <!-- Footer -->
