@@ -15,36 +15,35 @@
             align-items: center;
             position: relative;
         }
-    
-   .main-banner {
-    width: 100%;
-    max-width: 800px;  / This prevents it from getting too wide /
-    margin: 20px auto;
-    padding: 0 20px;  / This gives some breathing room on mobile /
-}
 
-.main-banner img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
+        .main-banner {
+            width: 100%;
+            max-width: 800px;
+            margin-top: 100px;  / Increased from 20px to 100px /
+            padding: 0 20px;
+        }
 
-.secondary-banners {
-    width: 100%;
-    max-width: 800px;  / Adjust this value as needed /
-    margin: 40px auto;
-    padding: 0 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
+        .main-banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
 
-.secondary-banners img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
+        .secondary-banners {
+            width: 100%;
+            max-width: 800px;
+            margin-top: 80px;  / Increased spacing /
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 60px;  / Increased gap between secondary banners /
+        }
 
+        .secondary-banners img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
 
         footer {
             position: absolute;
@@ -54,11 +53,12 @@
             color: #313647;
             font-family: Garamond, serif;
             font-style: italic;
-            font-size: 12px;  / Fixed comment syntax /
+            font-size: 12px;
         }
     </style>
 </head>
 <body>
+    <!-- Rest of your HTML stays the same -->
     <!-- Main Banner -->
     <div class="main-banner">
         <img src="assets/poh-text-banner.png" alt="Pedagogy of Humanity">
