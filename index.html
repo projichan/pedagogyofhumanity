@@ -14,15 +14,16 @@
             flex-direction: column;
             align-items: center;
             position: relative;
+            overflow-x: hidden; / Prevent horizontal scroll /
         }
 
         .main-banner {
             width: 100%;
             max-width: 800px;
             margin-top: 100px;
-            padding: 0 60px;  / Increased padding for more centering /
+            padding: 0 60px;
             display: flex;
-            justify-content: center;  / Added for better centering /
+            justify-content: center;
         }
 
         .main-banner img {
@@ -35,6 +36,7 @@
             width: 100%;
             max-width: 800px;
             margin-top: 80px;
+            margin-bottom: 120px; / Add space for footer /
             padding: 0 20px;
             display: flex;
             flex-direction: column;
@@ -43,22 +45,23 @@
         }
 
         .banner-35 {
-            width: 35% !important;
+            width: 35%;
             display: block;
         }
 
         .banner-80 {
-            width: 80% !important;
+            width: 80%;
             display: block;
         }
 
         .banner-125 {
-            width: 125% !important;
+            width: 125%;
             display: block;
+            max-width: 1000px; / Prevent excessive width /
         }
 
         footer {
-            position: absolute;
+            position: fixed; / Changed from absolute /
             bottom: 96px;
             text-align: center;
             width: 100%;
