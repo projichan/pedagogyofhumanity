@@ -15,22 +15,20 @@
             align-items: center;
         }
 
-        / TOP BANNER - Pedagogy of Humanity /
-        #top-banner-container {
-            width: 80%;
+        .main-banner {
+            width: 80%; / This gives us the cushion on both sides /
             max-width: 800px;
             margin-top: 100px;
             display: flex;
             justify-content: center;
         }
 
-        #top-banner-container img {
+        .main-banner img {
             width: 100%;
             height: auto;
         }
 
-        / LOWER BANNERS CONTAINER /
-        #lower-banners-container {
+        .secondary-banners {
             width: 80%;
             max-width: 800px;
             margin-top: 80px;
@@ -41,46 +39,41 @@
             align-items: center;
         }
 
-        / INDIVIDUAL LOWER BANNERS /
-        #banner-1 {
-            width: 25%;
+        / Keeping the first two banners at their current size /
+        .current-size {
+            width: auto;
             height: auto;
         }
 
-        #banner-2 {
-            width: 40%;
+        / Last banner at 100% of container width /
+        .full-width {
+            width: 100%;
             height: auto;
         }
 
-        #banner-3 {
-            width: 60%;
-            height: auto;
-        }
-
-        / FOOTER /
         footer {
             width: 100%;
             text-align: center;
             color: #313647;
             font-family: Garamond, serif;
             font-style: italic;
-            font-size: 18px;
+            font-size: 12px;
             padding-bottom: 96px;
             margin-top: auto;
         }
     </style>
 </head>
 <body>
-    <!-- Top Banner -->
-    <div id="top-banner-container">
+    <!-- Main Banner -->
+    <div class="main-banner">
         <img src="assets/poh-text-banner.png" alt="Pedagogy of Humanity">
     </div>
 
-    <!-- Lower Banners -->
-    <div id="lower-banners-container">
-        <img src="assets/in-all-things-teach-banner.png" alt="In All Things Teach" id="banner-1">
-        <img src="images/no-act-banner.png" alt="No Act" id="banner-2">
-        <img src="images/safety-is-banner.png" alt="Safety Is" id="banner-3">
+    <!-- Secondary Banners -->
+    <div class="secondary-banners">
+        <img src="assets/in-all-things-teach-banner.png" alt="In All Things Teach" class="current-size">
+        <img src="images/no-act-banner.png" alt="No Act" class="current-size">
+        <img src="images/safety-is-banner.png" alt="Safety Is" class="full-width">
     </div>
 
     <!-- Footer -->
