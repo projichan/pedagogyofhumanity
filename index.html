@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedagogy of Humanity</title>
     <style>
         body {
@@ -16,7 +16,7 @@
         }
 
         .main-banner {
-            width: 80%; / This gives us the cushion on both sides /
+            width: 80%;
             max-width: 800px;
             margin-top: 100px;
             display: flex;
@@ -39,15 +39,19 @@
             align-items: center;
         }
 
-        / Keeping the first two banners at their current size /
-        .current-size {
-            width: auto;
+        / Individual sizes for each banner /
+        .first-banner {
+            width: 25%; / Adjust this percentage as needed /
             height: auto;
         }
 
-        / Last banner at 100% of container width /
-        .full-width {
-            width: 100%;
+        .second-banner {
+            width: 40%; / Adjust this percentage as needed /
+            height: auto;
+        }
+
+        .third-banner {
+            width: 60%; / Adjust this percentage as needed /
             height: auto;
         }
 
@@ -57,7 +61,7 @@
             color: #313647;
             font-family: Garamond, serif;
             font-style: italic;
-            font-size: 18px;
+            font-size: 18px; / Increased from 12px /
             padding-bottom: 96px;
             margin-top: auto;
         }
@@ -71,9 +75,9 @@
 
     <!-- Secondary Banners -->
     <div class="secondary-banners">
-        <img src="assets/in-all-things-teach-banner.png" alt="In All Things Teach" class="current-size">
-        <img src="images/no-act-banner.png" alt="No Act" class="current-size">
-        <img src="images/safety-is-banner.png" alt="Safety Is" class="full-width">
+        <img src="assets/in-all-things-teach-banner.png" alt="In All Things Teach" class="first-banner">
+        <img src="images/no-act-banner.png" alt="No Act" class="second-banner">
+        <img src="images/safety-is-banner.png" alt="Safety Is" class="third-banner">
     </div>
 
     <!-- Footer -->
