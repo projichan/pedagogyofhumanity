@@ -52,43 +52,29 @@
 
     .content-wrapper h2 {
       font-style: italic;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
 
     .decorative-line {
       display: flex;
       align-items: center;
       justify-content: center;
+      gap: 12px;
       margin: 20px auto;
-      width: 100%;
-      max-width: 400px;
-      gap: 16px;
+      max-width: 220px;
     }
 
-    .decorative-line::before,
-    .decorative-line::after {
-      content: "";
+    .decorative-line .line {
+      height: 1px;
       flex: 1;
-      height: 2px;
       background-color: #313647;
-      border-radius: 2px;
     }
 
-    .decorative-line::after {
-      margin-left: 8px;
-    }
-
-    .decorative-line::before {
-      margin-right: 8px;
-    }
-
-    .decorative-line::after {
-      content: "";
-      width: 8px;
-      height: 8px;
+    .decorative-line .dot {
+      width: 6px;
+      height: 6px;
+      background-color: #313647;
       border-radius: 50%;
-      background-color: #313647;
-      flex: none;
     }
 
     .content-wrapper p {
@@ -123,15 +109,17 @@
   <!-- Content -->
   <div class="content-wrapper">
     <h2>What is The Pedagogy of Humanity?</h2>
-    <div class="decorative-line"></div>
+    <div class="decorative-line">
+      <div class="line"></div>
+      <div class="dot"></div>
+      <div class="line"></div>
+    </div>
     <p><strong>In its simplest, most basic form, the Pedagogy of Humanity asks one question:</strong></p>
     <p><em>Have you ever had a teacher that you knew saw you? Really saw you?</em></p>
-    <p>
-      What if it wasn’t just one.<br>
-      What if that was ten teachers?<br>
-      A hundred teachers?<br>
-      A thousand?
-    </p>
+    <p>What if it wasn’t just one.<br>
+       What if that was ten teachers?<br>
+       A hundred teachers?<br>
+       A thousand?</p>
     <p>This is the radical hope of the Pedagogy of Humanity:</p>
     <p>The belief that dares to envision a future where each individual is recognized for exactly what they are — a human person.</p>
   </div>
@@ -142,4 +130,3 @@
   </footer>
 </body>
 </html>
-
