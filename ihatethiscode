@@ -1,84 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedagogy of Humanity</title>
-    <style>
-        body {
-            background-color: #d6dce1;
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedagogy of Humanity</title>
+  <style>
+    body {
+      background-color: #d6dce1;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-        .main-banner {
-            width: 80%; / This gives us the cushion on both sides /
-            max-width: 800px;
-            margin-top: 100px;
-            display: flex;
-            justify-content: center;
-        }
+    .main-banner,
+    .secondary-banners {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-inline: auto;
+    }
 
-        .main-banner img {
-            width: 100%;
-            height: auto;
-        }
+    .main-banner {
+      margin-top: 100px;
+    }
 
-        .secondary-banners {
-            width: 80%;
-            max-width: 800px;
-            margin-top: 80px;
-            margin-bottom: 200px;
-            display: flex;
-            flex-direction: column;
-            gap: 60px;
-            align-items: center;
-        }
+    .secondary-banners {
+      margin-top: 80px;
+      margin-bottom: 200px;
+      gap: 60px;
+    }
 
-        / Keeping the first two banners at their current size /
-        .current-size {
-            width: auto;
-            height: auto;
-        }
+    /* Responsive images with fixed max sizes */
+    .main-img {
+      width: 100%;
+      max-width: 1366px;
+      height: auto;
+    }
 
-        / Last banner at 100% of container width /
-        .full-width {
-            width: 100%;
-            height: auto;
-        }
+    .teach-img {
+      width: 100%;
+      max-width: 326.8px;
+      height: auto;
+    }
 
-        footer {
-            width: 100%;
-            text-align: center;
-            color: #313647;
-            font-family: Garamond, serif;
-            font-style: italic;
-            font-size: 12px;
-            padding-bottom: 96px;
-            margin-top: auto;
-        }
-    </style>
+    .no-act-img {
+      width: 100%;
+      max-width: 771.6px;
+      height: auto;
+    }
+
+    .safety-img {
+      width: 100%;
+      max-width: 1366px;
+      height: auto;
+    }
+
+    footer {
+      width: 100%;
+      text-align: center;
+      color: #313647;
+      font-family: Garamond, serif;
+      font-style: italic;
+      font-size: 18px;
+      padding-bottom: 96px;
+      margin-top: auto;
+    }
+  </style>
 </head>
 <body>
-    <!-- Main Banner -->
-    <div class="main-banner">
-        <img src="assets/poh-text-banner.png" alt="Pedagogy of Humanity">
-    </div>
+  <!-- Main Banner -->
+  <div class="main-banner">
+    <img src="assets/poh-text-banner-v2.png" alt="Pedagogy of Humanity" class="main-img" />
+  </div>
 
-    <!-- Secondary Banners -->
-    <div class="secondary-banners">
-        <img src="assets/in-all-things-teach-banner.png" alt="In All Things Teach" class="current-size">
-        <img src="images/no-act-banner.png" alt="No Act" class="current-size">
-        <img src="images/safety-is-banner.png" alt="Safety Is" class="full-width">
-    </div>
+  <!-- Secondary Banners -->
+  <div class="secondary-banners">
+    <img src="assets/in-all-things-teach-banner.png" alt="In All Things Teach" class="teach-img" />
+    <img src="images/no-act-banner.png" alt="No Act" class="no-act-img" />
+    <img src="images/safety-is-banner-v2.png" alt="Safety Is" class="safety-img" />
+  </div>
 
-    <!-- Footer -->
-    <footer>
-        © 2025 Brittany L. Stratton. Pedagogy of Humanity ™. All Rights Reserved.
-    </footer>
+  <!-- Footer -->
+  <footer>
+    © 2025 Brittany L. Stratton. Pedagogy of Humanity ™. All Rights Reserved.
+  </footer>
 </body>
 </html>
