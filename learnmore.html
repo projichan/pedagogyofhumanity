@@ -55,11 +55,40 @@
       margin-bottom: 10px;
     }
 
-    .line-break {
-      margin: 16px auto;
-      font-size: 20px;
-      letter-spacing: 2px;
-      color: #2c7a7b;
+    .decorative-line {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px auto;
+      width: 100%;
+      max-width: 400px;
+      gap: 16px;
+    }
+
+    .decorative-line::before,
+    .decorative-line::after {
+      content: "";
+      flex: 1;
+      height: 2px;
+      background-color: #313647;
+      border-radius: 2px;
+    }
+
+    .decorative-line::after {
+      margin-left: 8px;
+    }
+
+    .decorative-line::before {
+      margin-right: 8px;
+    }
+
+    .decorative-line::after {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #313647;
+      flex: none;
     }
 
     .content-wrapper p {
@@ -94,13 +123,15 @@
   <!-- Content -->
   <div class="content-wrapper">
     <h2>What is The Pedagogy of Humanity?</h2>
-    <div class="line-break">— · —</div>
+    <div class="decorative-line"></div>
     <p><strong>In its simplest, most basic form, the Pedagogy of Humanity asks one question:</strong></p>
     <p><em>Have you ever had a teacher that you knew saw you? Really saw you?</em></p>
-    <p>What if it wasn’t just one.<br>
-       What if that was ten teachers?<br>
-       A hundred teachers?<br>
-       A thousand?</p>
+    <p>
+      What if it wasn’t just one.<br>
+      What if that was ten teachers?<br>
+      A hundred teachers?<br>
+      A thousand?
+    </p>
     <p>This is the radical hope of the Pedagogy of Humanity:</p>
     <p>The belief that dares to envision a future where each individual is recognized for exactly what they are — a human person.</p>
   </div>
@@ -111,3 +142,4 @@
   </footer>
 </body>
 </html>
+
