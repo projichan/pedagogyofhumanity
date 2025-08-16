@@ -8,3 +8,41 @@ I'm going to leave notes here for myself about the code
   hexcode for charcoal is #313647
   hexcode for header and footer banners is #2c7a7b
   hexcode for decorative scrollwork is #cca752
+
+
+The HTML for the nav bar is:
+<!-- Navigation Bar Snippet -->
+<nav>
+  <a href="index.html">Home</a>
+  <a href="learnmore.html">Learn More</a>
+  <a href="concepts.html">Concepts in Development</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+
+The CSS for the nav bar is:
+/* Navigation Styles */
+nav {
+  background-color: #2c7a7b;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-family: Garamond, serif;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #d6dce1;
+}
