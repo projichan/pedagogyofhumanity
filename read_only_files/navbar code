@@ -1,5 +1,18 @@
+Short navbar current:
+
 <!-- Navigation Bar (current links) -->
 <nav>
   <a href="index.html">Home</a>
   <a href="learnmore.html">Learn More</a>
+</nav>
+
+Full navbar code:
+
+<!-- Navigation Bar (expanded) -->
+<nav>
+  <a href="index.html">Home</a>
+  <a href="learnmore.html">Learn More</a>
+  <a href="concepts.html">Concepts in Development</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
 </nav>
