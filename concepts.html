@@ -1,1 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Concepts in Development • Pedagogy of Humanity</title>
+
+  <!-- Shared base styles (your existing snippet) -->
+  <link rel="stylesheet" href="read_only_files/base-styles.css" />
+
+  <style>
+    /* Page container + headings */
+    .wrap { width:100%; max-width:1200px; padding:28px 16px; margin:auto; }
+    h1 { margin:24px 0 8px; font-size:36px; line-height:1.15; text-align:center; font-family:Garamond,serif; color:#313647; }
+    .sub { text-align:center; color:#5b6277; font-style:italic; margin:0 0 20px; font-size:18px; }
+
+    /* Grid of concept cards */
+    .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px,1fr)); gap:20px; padding:8px 0 64px; }
+    .card {
+      background:#fff; border-radius:12px; box-shadow:0 6px 16px rgba(0,0,0,.08);
+      overflow:hidden; display:flex; flex-direction:column;
+      transition:transform .18s ease, box-shadow .18s ease;
+    }
+    .card:hover { transform:translateY(-2px); box-shadow:0 10px 24px rgba(0,0,0,.12); }
+
+    /* Image container keeps consistent aspect without cropping your art */
+    .thumb { position:relative; width:100%; aspect-ratio:4/3; background:#e9edf0; overflow:hidden; }
+    .thumb img { position:absolute; inset:0; width:100%; height:100%; object-fit:contain; }
+
+    figcaption { padding:14px 14px 16px; }
+
+    /* Typography for labels + blurbs (as requested) */
+    .title {
+      font-family:Garamond, serif;
+      font-size:22px;
+      font-weight:bold;
+      color:#313647;
+      margin:0 0 6px;
+    }
+    .blurb {
+      font-family:Garamond, serif;
+      font-size:16px;
+      color:#5b6277;
+      margin:0;
+      line-height:1.4;
+    }
+
+    /* Small screens */
+    @media (max-width:640px){
+      h1{font-size:28px}
+      .sub{font-size:16px}
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar (refresh this across pages when you’re ready) -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="learnmore.html">Learn More</a>
+    <a href="concepts.html">Concepts in Development</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="wrap">
+    <h1>Concepts in Development</h1>
+    <p class="sub">Works-in-progress within the Pedagogy of Humanity — covers, sample pages, and exploratory artifacts.</p>
+
+    <section class="grid">
+      <!-- Card 1: My Mommy's Body is Sick -->
+      <figure class="card">
+        <div class="thumb">
+          <img
+            src="assets/mommys_body_samplecover.png"
+            alt="Sample cover of children's book titled 'My Mommy's Body is Sick'"
+            loading="lazy" />
+        </div>
+        <figcaption>
+          <h3 class="title">My Mommy's Body is Sick</h3>
+          <p class="blurb">A children’s picture book introducing illness with compassion, safety, and understanding.</p>
+        </figcaption>
+      </figure>
+
+      <!-- Card 2: Chronic Illness Companion -->
+      <figure class="card">
+        <div class="thumb">
+          <img
+            src="assets/cpc_sample_cover.png"
+            alt="Sample cover of the Chronic Illness Companion: Creative Symptom Tracker"
+            loading="lazy" />
+        </div>
+        <figcaption>
+          <h3 class="title">Chronic Illness Companion: Creative Symptom Tracker</h3>
+          <p class="blurb">A guided resource for creatively tracking symptoms and supporting daily wellbeing with chronic illness.</p>
+        </figcaption>
+      </figure>
+
+      <!-- Card 3: 'In All Things, Teach' Guided Journal -->
+      <figure class="card">
+        <div class="thumb">
+          <img
+            src="assets/teachjournal_sample_cover.png"
+            alt="Sample cover of the 'In All Things, Teach' guided journal"
+            loading="lazy" />
+        </div>
+        <figcaption>
+          <h3 class="title">'In All Things, Teach' Guided Journal</h3>
+          <p class="blurb">A reflective journal designed around the Pedagogy of Humanity’s guiding principle of teaching through all things.</p>
+        </figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Brittany L. Stratton. Pedagogy of Humanity ™. All Rights Reserved.
+  </footer>
+</body>
+</html>
 
