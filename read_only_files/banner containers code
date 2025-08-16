@@ -1,0 +1,11 @@
+<!-- Main Banner -->
+<div class="main-banner">
+  <img src="assets/poh-text-banner-v2.png" alt="Pedagogy of Humanity" class="main-img" />
+</div>
+
+<!-- Secondary Banners -->
+<div class="secondary-banners">
+  <img src="assets/in-all-things-teach-banner.png" alt="In All Things Teach" class="teach-img" />
+  <img src="images/no-act-banner.png" alt="No Act" class="no-act-img" />
+  <img src="images/safety-is-banner-v2.png" alt="Safety Is" class="safety-img" />
+</div>
