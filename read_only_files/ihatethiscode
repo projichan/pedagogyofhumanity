@@ -15,6 +15,31 @@
       align-items: center;
     }
 
+    /* Navigation Styles */
+    nav {
+      background-color: #2c7a7b;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-family: Garamond, serif;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #d6dce1; /* Light hover effect */
+    }
+
     .main-banner,
     .secondary-banners {
       width: 100%;
@@ -72,6 +97,13 @@
   </style>
 </head>
 <body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="learnmore.html">Learn More</a>
+  </nav>
+
   <!-- Main Banner -->
   <div class="main-banner">
     <img src="assets/poh-text-banner-v2.png" alt="Pedagogy of Humanity" class="main-img" />
