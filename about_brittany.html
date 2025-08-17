@@ -5,8 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Brittany • Pedagogy of Humanity</title>
   <meta name="description" content="Meet Brittany L. Stratton — founder of the Pedagogy of Humanity. Learn the story, values, and scholarship behind this movement for trauma-responsive, human-centered education." />
-  <link rel="stylesheet" href="read_only_files/base-styles.css" />
+
   <style>
+    /* Base (exact match to index.html) */
+    body {
+      background-color: #d6dce1;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Navigation Styles (exact match) */
+    nav {
+      background-color: #2c7a7b;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-family: Garamond, serif;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+    nav a:hover { color: #d6dce1; }
+
+    /* Footer (exact match) */
+    footer {
+      width: 100%;
+      text-align: center;
+      color: #313647;
+      font-family: Garamond, serif;
+      font-style: italic;
+      font-size: 18px;
+      padding-bottom: 96px;
+      margin-top: auto;
+    }
+
+    /* Page-specific styles (your previous content styling) */
     .wrap{width:100%;max-width:900px;padding:40px 16px;margin:auto}
     h1,h2{font-family:Garamond,serif;color:#313647}
     h1{font-size:36px;margin:16px 0 8px;text-align:center}
@@ -16,11 +61,20 @@
     .two-col{display:grid;grid-template-columns:1fr;gap:20px}
     .card{background:#fff;border-radius:12px;box-shadow:0 6px 16px rgba(0,0,0,.08);padding:18px}
     .kv{display:grid;grid-template-columns:120px 1fr;gap:18px;align-items:center}
-    .avatar{width:120px;height:120px;border-radius:50%;background:#e9edf0;display:flex;align-items:center;justify-content:center;font-family:Garamond,serif;color:#5b6277}
+
+    /* Avatar circle with proper scaling */
+    .avatar{
+      width:120px;height:120px;border-radius:50%;
+      background:#e9edf0;overflow:hidden;display:flex;align-items:center;justify-content:center;
+      box-shadow:0 4px 10px rgba(0,0,0,.08);
+    }
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+
     ul{margin:10px 0 0 18px}
     li{margin:6px 0}
     .cta{display:inline-block;margin-top:12px;background:#2c7a7b;color:#fff;padding:10px 16px;border-radius:6px;text-decoration:none;font-family:Garamond,serif}
     .cta:hover{opacity:.9}
+
     @media (max-width:640px){
       h1{font-size:28px}
       .kv{grid-template-columns:1fr}
@@ -29,6 +83,7 @@
   </style>
 </head>
 <body>
+  <!-- Navigation (updated) -->
   <nav>
     <a href="index.html">Home</a>
     <a href="learnmore.html">Learn More</a>
@@ -41,13 +96,10 @@
     <h1>About Brittany L. Stratton</h1>
     <p class="lead">Founder and steward of the Pedagogy of Humanity — a flag in the ground and a movement of thought rooted in dignity, safety, and love.</p>
 
-    <!-- Intro card with optional avatar -->
+    <!-- Intro card with avatar -->
     <section class="section card kv">
       <div class="avatar">
-        <!-- Replace with a headshot when ready:
-             <img src="assets/brittany-headshot.png" alt="Portrait of Brittany Stratton" class="avatar" />
-        -->
-        Your Photo
+        <img src="assets/selfie.jpg" alt="Portrait of Brittany Stratton" />
       </div>
       <div>
         <p>
