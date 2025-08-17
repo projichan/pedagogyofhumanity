@@ -39,6 +39,26 @@
     }
     nav a:hover { color: #d6dce1; }
 
+/* Mobile-friendly navbar tweaks */
+@media (max-width: 700px){
+  nav { flex-wrap: wrap; gap: 16px; padding: 12px 8px; }
+  nav a { font-size: 16px; }
+}
+
+@media (max-width: 420px){
+  /* Switch to a horizontal scroll on very narrow screens */
+  nav {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;      /* enables swipe/scroll */
+    white-space: nowrap;   /* keep links on one line */
+    gap: 24px;
+    padding: 10px 8px;
+  }
+  nav a { flex: 0 0 auto; } /* prevent shrinking */
+}
+
+    
     /* Footer (exact match) */
     footer {
       width: 100%;
