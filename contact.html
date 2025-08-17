@@ -4,66 +4,89 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact • Pedagogy of Humanity</title>
-  <link rel="stylesheet" href="read_only_files/base-styles.css" />
+  <meta name="description" content="Get in touch with Brittany L. Stratton, founder of the Pedagogy of Humanity." />
+
   <style>
-    .wrap {
-      width: 100%;
-      max-width: 540px;
-      padding: 40px 16px;
-      margin: auto;
+    /* Base (exact match to index.html) */
+    body {
+      background-color: #d6dce1;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
-    h1 {
-      text-align: center;
-      font-family: Garamond, serif;
-      color: #313647;
-      margin-bottom: 24px;
-    }
-
-    form {
-      background: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-    }
-
-    label {
-      display: block;
-      margin-bottom: 8px;
-      font-family: Garamond, serif;
-      color: #313647;
-    }
-
-    input[type="email"],
-    textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 16px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-      font-size: 16px;
-      font-family: Garamond, serif;
-    }
-
-    textarea { resize: vertical; }
-
-    button {
+    /* Navigation Styles (exact match) */
+    nav {
       background-color: #2c7a7b;
-      color: #fff;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 16px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
       font-family: Garamond, serif;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+    nav a:hover { color: #d6dce1; }
+
+    /* Footer (exact match) */
+    footer {
+      width: 100%;
+      text-align: center;
+      color: #313647;
+      font-family: Garamond, serif;
+      font-style: italic;
+      font-size: 18px;
+      padding-bottom: 96px;
+      margin-top: auto;
     }
 
-    button:hover { opacity: .9; }
+    /* Page-specific: contact form */
+    .wrap { width:100%; max-width:540px; padding:40px 16px; margin:100px auto 40px; }
+    h1 {
+      text-align:center; color:#313647; font-family:Garamond, serif;
+      font-size:32px; margin:0 0 8px;
+    }
+    .lead {
+      text-align:center; font-family:Garamond, serif; color:#5b6277;
+      margin:0 0 24px; font-style:italic;
+    }
+    form {
+      background:#fff; border-radius:12px;
+      box-shadow:0 6px 16px rgba(0,0,0,.08);
+      padding:20px;
+    }
+    label {
+      display:block; margin:0 0 8px; font-family:Garamond, serif; color:#313647;
+    }
+    input[type="email"], input[type="text"], textarea {
+      width:100%; padding:10px; margin:0 0 16px;
+      border:1px solid #ccc; border-radius:6px; box-sizing:border-box;
+      font-size:16px; font-family:Garamond, serif;
+      background:#fff;
+    }
+    textarea { resize:vertical; min-height:140px; }
+
+    button[type="submit"] {
+      background:#2c7a7b; color:#fff; border:none;
+      padding:12px 18px; border-radius:6px; cursor:pointer;
+      font-size:16px; font-family:Garamond, serif;
+    }
+    button[type="submit"]:hover { opacity:.9; }
   </style>
 </head>
 <body>
-  <!-- Navigation -->
+  <!-- Navigation (updated) -->
   <nav>
     <a href="index.html">Home</a>
     <a href="learnmore.html">Learn More</a>
@@ -74,15 +97,21 @@
 
   <main class="wrap">
     <h1>Get in Touch</h1>
+    <p class="lead">Have a question or idea? I’d love to hear from you.</p>
+
+    <!-- Formspree form -->
     <form action="https://formspree.io/f/xgvzogzk" method="POST">
+      <label for="name">Your Name</label>
+      <input id="name" type="text" name="name" autocomplete="name" />
+
       <label for="email">Your Email</label>
-      <input id="email" type="email" name="email" required />
+      <input id="email" type="email" name="email" autocomplete="email" required />
 
       <label for="message">Your Message</label>
-      <textarea id="message" name="message" rows="6" required></textarea>
+      <textarea id="message" name="message" required></textarea>
 
-      <!-- Redirect after submission -->
-      <input type="hidden" name="_redirect" value="https://pedagogyofhumanity.com/thank_you.html" />
+      <!-- Redirect after successful submission -->
+      <input type="hidden" name="_redirect" value="thank_you.html" />
 
       <button type="submit">Send</button>
     </form>
