@@ -1,35 +1,66 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Brittany • Pedagogy of Humanity</title>
-  <meta name="description" content="Meet Brittany L. Stratton — founder of the Pedagogy of Humanity. Learn the story, values, and scholarship behind this movement for trauma-responsive, human-centered education." />
+
+  <!-- Shared base styles -->
   <link rel="stylesheet" href="read_only_files/base-styles.css" />
+
   <style>
-    .wrap{width:100%;max-width:900px;padding:40px 16px;margin:auto}
-    h1,h2{font-family:Garamond,serif;color:#313647}
-    h1{font-size:36px;margin:16px 0 8px;text-align:center}
-    .lead{font-style:italic;color:#5b6277;text-align:center;max-width:720px;margin:0 auto 28px}
-    p{line-height:1.6;color:#313647;margin:0 0 14px}
-    .section{margin:28px 0}
-    .two-col{display:grid;grid-template-columns:1fr;gap:20px}
-    .card{background:#fff;border-radius:12px;box-shadow:0 6px 16px rgba(0,0,0,.08);padding:18px}
-    .kv{display:grid;grid-template-columns:120px 1fr;gap:18px;align-items:center}
-    .avatar{width:120px;height:120px;border-radius:50%;background:#e9edf0;display:flex;align-items:center;justify-content:center;font-family:Garamond,serif;color:#5b6277}
-    ul{margin:10px 0 0 18px}
-    li{margin:6px 0}
-    .cta{display:inline-block;margin-top:12px;background:#2c7a7b;color:#fff;padding:10px 16px;border-radius:6px;text-decoration:none;font-family:Garamond,serif}
-    .cta:hover{opacity:.9}
+    .wrap { width:100%; max-width:1000px; margin:auto; padding:32px 16px; }
+
+    h1 {
+      margin:24px 0 8px;
+      font-size:36px;
+      line-height:1.15;
+      text-align:center;
+      font-family:Garamond, serif;
+      color:#313647;
+    }
+
+    .bio {
+      margin-top:32px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      text-align:center;
+      gap:24px;
+    }
+
+    /* Circular avatar */
+    .avatar {
+      width:180px;
+      height:180px;
+      border-radius:50%;
+      overflow:hidden;
+      box-shadow:0 6px 16px rgba(0,0,0,.15);
+      flex-shrink:0;
+    }
+    .avatar img {
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+
+    .bio p {
+      font-family:Garamond, serif;
+      font-size:18px;
+      color:#5b6277;
+      line-height:1.55;
+      max-width:720px;
+    }
+
     @media (max-width:640px){
-      h1{font-size:28px}
-      .kv{grid-template-columns:1fr}
-      .avatar{margin:0 auto}
+      h1 { font-size:28px; }
+      .bio p { font-size:16px; }
     }
   </style>
 </head>
 <body>
+  <!-- Navbar -->
   <nav>
     <a href="index.html">Home</a>
     <a href="learnmore.html">Learn More</a>
@@ -39,86 +70,19 @@
   </nav>
 
   <main class="wrap">
-    <h1>About Brittany L. Stratton</h1>
-    <p class="lead">Founder and steward of the Pedagogy of Humanity — a flag in the ground and a movement of thought rooted in dignity, safety, and love.</p>
-
-    <!-- Intro card with optional avatar -->
-    <section class="section card kv">
+    <h1>About Brittany</h1>
+    <section class="bio">
       <div class="avatar">
-        <!-- Replace with a headshot when ready:
-             <img src="assets/brittany-headshot.png" alt="Portrait of Brittany Stratton" class="avatar" />
-        -->
-        Your Photo
+        <img src="assets/selfie.jpg" alt="Portrait of Brittany Stratton" />
       </div>
-      <div>
-        <p>
-          Brittany L. Stratton is the founder and steward of the <em>Pedagogy of Humanity</em> — a movement born from both lived experience and scholarship. She is a doctoral student, teacher, mother, daughter, and sister. Most importantly, she is a human being who has faced and survived trauma, and who now turns that survival into purpose.
-        </p>
-        <p>
-          Brittany’s childhood was marked by abuse, family violence, and the failures of the systems meant to protect her. By the age of eleven, she had experienced both foster care and the painful reality of being returned to unsafe environments. At seventeen, as a pregnant teenager, she left home and began forging a new path — one rooted in the search for safety and love.
-        </p>
-        <p>
-          Through these experiences, Brittany came to believe that <strong>safety is the highest form of love</strong>. This conviction, alongside her resilience and compassion, became the foundation of her life’s work. She has spent more than fifteen years nurturing her own healing while helping others find pathways to theirs.
-        </p>
-        <p>
-          Today, Brittany is building the Pedagogy of Humanity as both a philosophy and a practical framework. It begins with the recognition of each person’s humanity and insists that safety and dignity are not luxuries, but rights of birth. Through her writing, research, and teaching, she creates spaces where scars are not hidden but honored, and where education becomes an act of love.
-        </p>
-        <a class="cta" href="contact.html">Invite me to speak or collaborate</a>
-      </div>
-    </section>
-
-    <section class="section two-col">
-      <div class="card">
-        <h2>Guiding Beliefs</h2>
-        <ul>
-          <li><strong>Safety is the highest form of love.</strong></li>
-          <li><strong>No act of kindness done in love is ever wasted.</strong></li>
-          <li><strong>In all things, teach.</strong></li>
-        </ul>
-        <p style="margin-top:12px">
-          These principles inform how we design classrooms, policies, relationships, and communities. They are simple
-          on purpose — and radically demanding in practice.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>Grounding Frameworks</h2>
-        <ul>
-          <li>Bronfenbrenner’s ecological systems theory</li>
-          <li>Maslow’s hierarchy reframed through safety and dignity</li>
-          <li>Holistic Wheel of Wellness</li>
-          <li>Trauma-responsive, relationship-centered practice</li>
-        </ul>
-        <p style="margin-top:12px">
-          The Pedagogy of Humanity synthesizes these traditions into a coherent, humane approach to teaching and learning.
-        </p>
-      </div>
-    </section>
-
-    <section class="section card">
-      <h2>What I Do</h2>
-      <ul>
-        <li>Develop and articulate the Pedagogy of Humanity as a living, practical framework.</li>
-        <li>Write and speak about trauma-responsive education and human-centered design.</li>
-        <li>Create tools and resources (e.g., guided journals, children’s books, practical guides) aligned to the pedagogy.</li>
-        <li>Collaborate with educators, organizations, and communities to translate values into daily practice.</li>
-      </ul>
-    </section>
-
-    <section class="section card">
-      <h2>Why This Site Is Independent</h2>
       <p>
-        This site is an independent home for the Pedagogy of Humanity — separate from any institution — so its voice,
-        integrity, and evolution remain with its community of practice.
+        Brittany Stratton is the creator of the Pedagogy of Humanity, a framework rooted
+        in love, dignity, and safety as the foundation of all learning. Drawing on
+        professional expertise in early childhood and special education, combined with
+        lived experience of chronic illness and caregiving, Brittany works to bring
+        compassion and humanity into educational and community spaces. Her guiding
+        principle: safety is the highest form of love.
       </p>
-    </section>
-
-    <section class="section card">
-      <h2>Connect</h2>
-      <p>
-        If the Pedagogy of Humanity resonates with your work — or your hope for what education can be — I’d love to talk.
-      </p>
-      <a class="cta" href="contact.html">Get in touch</a>
     </section>
   </main>
 
