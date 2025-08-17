@@ -4,15 +4,46 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Learn More • Pedagogy of Humanity</title>
-
-  <!-- Shared base styles (body, nav, footer, images) -->
-  <link rel="stylesheet" href="read_only_files/base-styles.css" />
-
   <style>
-    /* Page container */
-    .wrap{width:100%;max-width:1000px;padding:40px 16px;margin:100px auto 40px}
+    body {
+      background-color: #d6dce1;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-    /* Your existing content wrapper (preserved) */
+    /* Navigation Styles (exactly like index.html) */
+    nav {
+      background-color: #2c7a7b;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-family: Garamond, serif;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #d6dce1; /* Light hover effect */
+    }
+
+    /* Page container */
+    .wrap { width:100%; max-width:1000px; padding:40px 16px; margin:100px auto 40px; }
+
+    /* Your existing content wrapper */
     .content-wrapper {
       max-width: 800px;
       margin: 0 auto 28px;
@@ -20,7 +51,6 @@
       padding: 40px;
       border-radius: 12px;
       text-align: center;
-      font-family: Garamond, serif;
     }
 
     .content-wrapper h2 {
@@ -28,9 +58,10 @@
       font-size: 30pt;
       margin-bottom: 20px;
       color:#313647;
+      font-family: Garamond, serif;
     }
 
-    /* Decorative line-dot-line (preserved) */
+    /* Decorative line-dot-line */
     .decorative-line {
       display: flex;
       align-items: center;
@@ -47,23 +78,41 @@
       line-height: 1.6;
       margin: 16px 0;
       color:#313647;
+      font-family: Garamond, serif;
     }
     .content-wrapper p strong { font-weight: bold; }
 
-    /* Two-column section you provided */
-    .section{margin:28px auto; max-width:1000px; padding:0 16px}
-    .two-col{display:grid;grid-template-columns:1fr;gap:20px}
-    .card{
-      background:#fff;border-radius:12px;box-shadow:0 6px 16px rgba(0,0,0,.08);
-      padding:18px
+    /* Two-column section */
+    .section { margin:28px auto; max-width:1000px; padding:0 16px; }
+    .two-col { display:grid; grid-template-columns:1fr; gap:20px; }
+    .card {
+      background:#fff;
+      border-radius:12px;
+      box-shadow:0 6px 16px rgba(0,0,0,.08);
+      padding:18px;
     }
-    h2{font-family:Garamond,serif;color:#313647;margin:0 0 8px}
-    ul{margin:10px 0 0 18px}
-    li{margin:6px 0}
-    @media (min-width:820px){ .two-col{grid-template-columns:1fr 1fr} }
-    @media (max-width:640px){
-      .wrap{margin-top:80px}
-      .content-wrapper{padding:28px}
+    h2 { color:#313647; margin:0 0 8px; font-family: Garamond, serif; }
+    ul { margin:10px 0 0 18px; }
+    li { margin:6px 0; }
+
+    @media (min-width:820px) {
+      .two-col { grid-template-columns:1fr 1fr; }
+    }
+
+    @media (max-width:640px) {
+      .wrap { margin-top:80px; }
+      .content-wrapper { padding:28px; }
+    }
+
+    footer {
+      width: 100%;
+      text-align: center;
+      color: #313647;
+      font-family: Garamond, serif;
+      font-style: italic;
+      font-size: 18px;
+      padding-bottom: 96px;
+      margin-top: auto;
     }
   </style>
 </head>
@@ -109,7 +158,7 @@
           <li><strong>No act of kindness done in love is ever wasted.</strong></li>
           <li><strong>In all things, teach.</strong></li>
         </ul>
-        <p style="margin-top:12px">
+        <p style="margin-top:12px; font-family:Garamond, serif;">
           These principles inform how we design classrooms, policies, relationships, and communities. They are simple
           on purpose — and radically demanding in practice.
         </p>
@@ -123,7 +172,7 @@
           <li>Holistic Wheel of Wellness</li>
           <li>Trauma-responsive, relationship-centered practice</li>
         </ul>
-        <p style="margin-top:12px">
+        <p style="margin-top:12px; font-family:Garamond, serif;">
           The Pedagogy of Humanity synthesizes these traditions into a coherent, humane approach to teaching and learning.
         </p>
       </div>
@@ -135,3 +184,4 @@
   </footer>
 </body>
 </html>
+
