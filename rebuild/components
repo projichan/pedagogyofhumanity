@@ -1,1 +1,3 @@
-
+Rebuilding the website from scratch using a modular system
+breaking page/site parts into chunks with html per component
+to prevent issues over time and build in scalability
