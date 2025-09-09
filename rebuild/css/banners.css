@@ -1,0 +1,15 @@
+/* Banner containers */
+.main-banner,
+.secondary-banners{
+  width:100%;
+  display:flex; flex-direction:column; align-items:center;
+  margin-inline:auto;
+}
+.main-banner{ margin-top:100px; }
+.secondary-banners{ margin-top:80px; margin-bottom:200px; gap:60px; }
+
+/* Specific image sizes used on home */
+.main-img{   width:100%; max-width:1366px; }
+.teach-img{  width:100%; max-width:326.8px; }
+.no-act-img{ width:100%; max-width:771.6px; }
+.safety-img{ width:100%; max-width:1366px; }
