@@ -13,13 +13,11 @@ html, body { margin:0; padding:0; }
 
 /* ==== Page frame ==== */
 body{
-  min-height:100vh;
-  display:flex;                 /* for sticky footer */
-  flex-direction:column;
-  background:var(--bg);
-  color:var(--ink);
-  font-family: Garamond, serif; /* swap later if you like */
-  line-height:1.5;
+  /* Removed: min-height:100vh; display:flex; flex-direction:column; */
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Garamond, serif;
+  line-height: 1.5;
 }
 
 /* ==== Typographic/link defaults ==== */
@@ -42,11 +40,13 @@ img{ max-width:100%; height:auto; display:block; }
   padding:28px 16px;
 }
 
-/* ==== Footer (if you want sticky-bottom) ==== */
+/* ==== Footer (flows after content) ==== */
 footer{
-  margin-top:auto;              /* pushes to bottom */
-  text-align:center;
-  font-style:italic;
-  font-size:18px;
-  padding:16px;                 /* lighter default */
+  /* Removed: margin-top:auto;  */
+  margin-top: 24px;           /* small breathing room above footer */
+  text-align: center;
+  font-style: italic;
+  font-size: 18px;
+  padding: 16px;
 }
+
