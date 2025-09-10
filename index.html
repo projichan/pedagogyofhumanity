@@ -2,144 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pedagogy of Humanity</title>
-  <style>
-    body {
-      background-color: #d6dce1;
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
 
-    /* Navigation Styles */
-    nav {
-      background-color: #2c7a7b;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      padding: 16px 0;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-family: Garamond, serif;
-      font-size: 18px;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #d6dce1; /* Light hover effect */
-    }
-
-    .main-banner,
-    .secondary-banners {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-inline: auto;
-    }
-
-    .main-banner {
-      margin-top: 100px;
-    }
-
-    .secondary-banners {
-      margin-top: 80px;
-      margin-bottom: 200px;
-      gap: 60px;
-    }
-
-/* Mobile-friendly navbar tweaks */
-@media (max-width: 700px){
-  nav { flex-wrap: wrap; gap: 16px; padding: 12px 8px; }
-  nav a { font-size: 16px; }
-}
-
-@media (max-width: 420px){
-  /* Switch to a horizontal scroll on very narrow screens */
-  nav {
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    overflow-x: auto;      /* enables swipe/scroll */
-    white-space: nowrap;   /* keep links on one line */
-    gap: 24px;
-    padding: 10px 8px;
-  }
-  nav a { flex: 0 0 auto; } /* prevent shrinking */
-}
-    
-    /* Responsive images with fixed max sizes */
-    .main-img {
-      width: 100%;
-      max-width: 1366px;
-      height: auto;
-    }
-
-    .teach-img {
-      width: 100%;
-      max-width: 326.8px;
-      height: auto;
-    }
-
-    .no-act-img {
-      width: 100%;
-      max-width: 771.6px;
-      height: auto;
-    }
-
-    .safety-img {
-      width: 100%;
-      max-width: 1366px;
-      height: auto;
-    }
-
-    footer {
-      width: 100%;
-      text-align: center;
-      color: #313647;
-      font-family: Garamond, serif;
-      font-style: italic;
-      font-size: 18px;
-      padding-bottom: 96px;
-      margin-top: auto;
-    }
-  </style>
+  <link rel="stylesheet" href="rebuild/base.css">
+  <link rel="stylesheet" href="rebuild/navstyle.css">
+  <link rel="stylesheet" href="rebuild/banners.css">
+  <link rel="stylesheet" href="rebuild/home.css">
 </head>
 <body>
 
-  <!-- Navigation (updated) -->
- <nav class="site-nav" aria-label="Primary">
-  <a href="index.html">Home</a>
-  <a href="learnmore.html">Learn More</a>
-  <a href="concepts.html">Concepts in Development</a>
-  <a href="about_brittany.html">About</a>
-  <a href="contact.html">Contact</a>
-</nav>
+  <header>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="learnmore.html">Learn More</a>
+      <a href="concepts.html">Concepts in Development</a>
+      <a href="about_brittany.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
+  <main>
+    <!-- Main Banner -->
+    <div class="main-banner">
+      <img src="assets/poh-text-banner-v2.png" alt="Pedagogy of Humanity" class="main-img" />
+    </div>
 
-  <!-- Main Banner -->
-  <div class="main-banner">
-    <img src="assets/poh-text-banner-v2.png" alt="Pedagogy of Humanity" class="main-img" />
-  </div>
+    <!-- Secondary Banners -->
+    <div class="secondary-banners">
+      <img src="assets/in-all-things-teach-banner.png" alt="In All Things Teach" class="teach-img" loading="lazy" decoding="async" />
+      <img src="images/no-act-banner.png" alt="No Act" class="no-act-img" loading="lazy" decoding="async" />
+      <img src="images/safety-is-banner-v2.png" alt="Safety Is" class="safety-img" loading="lazy" decoding="async" />
+    </div>
+  </main>
 
-  <!-- Secondary Banners -->
-  <div class="secondary-banners">
-    <img src="assets/in-all-things-teach-banner.png" alt="In All Things Teach" class="teach-img" />
-    <img src="images/no-act-banner.png" alt="No Act" class="no-act-img" />
-    <img src="images/safety-is-banner-v2.png" alt="Safety Is" class="safety-img" />
-  </div>
-
-  <!-- Footer -->
   <footer>
     © 2025 Brittany L. Stratton. Pedagogy of Humanity ™. All Rights Reserved.
   </footer>
