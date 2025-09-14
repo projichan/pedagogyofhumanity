@@ -1,52 +1,57 @@
-/* ==== Tokens (optional but handy) ==== */
+/* ===============================
+   Pedagogy of Humanity — Base CSS
+   =============================== */
+
+/* ---- Design tokens ---- */
 :root{
-  --bg:#d6dce1;
-  --ink:#313647;
-  --brand:#2c7a7b;
-  --white:#fff;
-  --radius:12px;
+  --bg:    #d6dce1;
+  --ink:   #313647;
+  --brand: #2c7a7b;
+  --white: #fff;
+  --radius: 12px;
 }
 
-/* ==== Resets ==== */
+/* ---- Resets ---- */
 *, *::before, *::after { box-sizing: border-box; }
-html, body { margin:0; padding:0; }
+html, body { margin: 0; padding: 0; height: 100%; }
 
-/* ==== Page frame ==== */
+/* ---- Page frame (footer sticks to bottom on short pages) ---- */
 body{
-  /* Removed: min-height:100vh; display:flex; flex-direction:column; */
+  display: flex;
+  flex-direction: column;
   background: var(--bg);
   color: var(--ink);
   font-family: Garamond, serif;
   line-height: 1.5;
 }
 
-/* ==== Typographic/link defaults ==== */
+/* Let main take remaining height so footer moves to bottom */
+main { flex: 1; }
+
+/* ---- Typographic/link defaults ---- */
 a{
-  color: inherit;               /* or pick a brand color */
-  text-decoration: underline;   /* better a11y */
+  color: inherit;                 /* components override as needed */
+  text-decoration: underline;
   text-underline-offset: 2px;
 }
 a:hover{ text-decoration-thickness: 2px; }
 
-img{ max-width:100%; height:auto; display:block; }
+img{ max-width: 100%; height: auto; display: block; }
 
-:focus-visible{ outline:3px solid var(--brand); outline-offset:3px; }
+:focus-visible{
+  outline: 3px solid var(--brand);
+  outline-offset: 3px;
+}
 
-/* ==== Layout helpers ==== */
+/* ---- Layout helper ---- */
 .container{
-  width:100%;
-  max-width:1200px;
-  margin-inline:auto;           /* logical centering */
-  padding:28px 16px;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 28px 16px;
 }
 
-/* ==== Footer (flows after content) ==== */
-footer{
-  /* Removed: margin-top:auto;  */
-  margin-top: 24px;           /* small breathing room above footer */
-  text-align: center;
-  font-style: italic;
-  font-size: 18px;
-  padding: 16px;
-}
-
+/* NOTE:
+   Footer styles live in rebuild/css/footer.css as .site-footer.
+   Do not style <footer> here to avoid conflicts.
+*/
