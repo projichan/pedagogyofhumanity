@@ -1,0 +1,35 @@
+/* ===============================
+   Pedagogy of Humanity — Footer
+   =============================== */
+
+.site-footer {
+  width: 100%;
+  text-align: center;
+  color: #313647;              /* dark ink */
+  font-family: Garamond, serif;
+  font-style: italic;
+  font-size: 18px;
+  padding: 24px 16px 96px;     /* breathing room at bottom */
+  margin-top: auto;
+  background: transparent;     /* can switch to solid if needed */
+}
+
+/* Links inside footer */
+.site-footer a {
+  color: #2c7a7b;              /* brand teal for links */
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.3s ease;
+}
+
+.site-footer a:hover {
+  color: #014d4e;              /* darker teal hover */
+}
+
+/* Smaller screens: shrink font slightly */
+@media (max-width: 640px) {
+  .site-footer {
+    font-size: 16px;
+    padding: 20px 12px 72px;
+  }
+}
