@@ -2,10 +2,19 @@
    Pedagogy of Humanity — Nav Bar
    =============================== */
 
+/* Ensure header + nav always span full width */
+header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.site-nav {
+  width: 100%;   /* redundant but keeps it bulletproof */
+}
+
 /* Main nav container */
 .site-nav {
   background: #2c7a7b;               /* brand teal */
-  width: 100%;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -13,7 +22,7 @@
   display: flex;
   justify-content: center;
   gap: 40px;
-  padding: 16px 0;                   /* matches learnmore.html */
+  padding: 16px 0;
   margin: 0;
 }
 
