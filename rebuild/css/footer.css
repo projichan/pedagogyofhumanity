@@ -9,27 +9,27 @@
   font-family: Garamond, serif;
   font-style: italic;
   font-size: 16px;
-  padding: 24px 16px 96px;
+  padding: 20px 16px;    /* compact footer, no forced scroll */
   margin-top: auto;
-  background: none; /* clean background */
+  background: none;
 }
 
+/* Links inside footer */
 .site-footer a {
-  color: #2c7a7b;       /* brand teal */
+  color: #2c7a7b;        /* brand teal */
   text-decoration: underline;
   margin: 0 8px;
-  font-style: normal;   /* distinguish links from italic base text */
+  font-style: normal;
   font-size: 15px;
 }
 
 .site-footer a:hover {
-  color: #014d4e;
+  color: #014d4e;        /* darker teal hover */
 }
 
-/* Smaller screens: shrink font slightly */
+/* Mobile tweak: a little extra breathing room */
 @media (max-width: 640px) {
   .site-footer {
-    font-size: 16px;
-    padding: 20px 12px 72px;
+    padding-bottom: 28px;
   }
 }
