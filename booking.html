@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Booking • Pedagogy of Humanity</title>
+  <meta name="description" content="Book services with Brittany L. Stratton through the Pedagogy of Humanity. Secure checkout powered by Stripe." />
+
+  <!-- Global styles -->
+  <link rel="stylesheet" href="rebuild/css/base.css">
+  <link rel="stylesheet" href="rebuild/css/navstyle.css">
+
+  <!-- Page-specific styles -->
+  <style>
+    body {
+      background:#d6dce1; margin:0; min-height:100vh;
+      display:flex; flex-direction:column; align-items:stretch;
+      font-family:Garamond, serif;
+    }
+    header { width:100%; }
+    .wrap {
+      width:100%; max-width:1000px; margin:100px auto 40px; padding:40px 16px;
+      text-align:center;
+    }
+    h1 {
+      color:#313647; font-size:36px; margin:0 0 12px;
+    }
+    .sub {
+      color:#5b6277; font-size:18px; margin:0 0 32px; font-style:italic;
+    }
+    .pricing-container {
+      background:#fff; border-radius:12px;
+      box-shadow:0 6px 16px rgba(0,0,0,.08);
+      padding:24px; margin:0 auto;
+    }
+    footer {
+      width:100%; text-align:center; color:#313647; font-style:italic; font-size:18px;
+      padding-bottom:96px; margin-top:auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="learnmore.html">Learn More</a>
+      <a href="concepts.html">Concepts in Development</a>
+      <a href="about_brittany.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <h1>Booking</h1>
+    <p class="sub">Schedule and purchase sessions securely through Stripe.</p>
+
+    <div class="pricing-container">
+      <!-- Live Stripe Pricing Table -->
+      <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+      <stripe-pricing-table 
+        pricing-table-id="prctbl_1S6XMYQj0r6sKJluat1JEbdc"
+        publishable-key="pk_live_51RxYNfQj0r6sKJludgoJt5OYeCSOHbO4XISXsQMLTBoRo94x8NsjJNzAfuI4RDRdKHdW6pp3pVWTD1XL9SWElRkc00lqktrLVg">
+      </stripe-pricing-table>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Brittany L. Stratton. Pedagogy of Humanity ™. All Rights Reserved.
+  </footer>
+</body>
+</html>
