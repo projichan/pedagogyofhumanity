@@ -4,8 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Concepts in Development • Pedagogy of Humanity</title>
+
+  <!-- Global styles -->
+  <link rel="stylesheet" href="rebuild/css/base.css">
+  <link rel="stylesheet" href="rebuild/css/navstyle.css">
+
+  <!-- Page-specific styles -->
   <style>
-    /* Base (exact match with index.html) */
+    /* Base */
     body {
       background-color: #d6dce1;
       margin: 0;
@@ -13,51 +19,11 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: stretch; /* ensure header/nav span full width */
     }
+    header { width: 100%; }
 
-    /* Navigation Styles (exact match) */
-    nav {
-      background-color: #2c7a7b;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      padding: 16px 0;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-family: Garamond, serif;
-      font-size: 18px;
-      transition: color 0.3s ease;
-    }
-    nav a:hover { color: #d6dce1; }
-
-/* Mobile-friendly navbar tweaks */
-@media (max-width: 700px){
-  nav { flex-wrap: wrap; gap: 16px; padding: 12px 8px; }
-  nav a { font-size: 16px; }
-}
-
-@media (max-width: 420px){
-  /* Switch to a horizontal scroll on very narrow screens */
-  nav {
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    overflow-x: auto;      /* enables swipe/scroll */
-    white-space: nowrap;   /* keep links on one line */
-    gap: 24px;
-    padding: 10px 8px;
-  }
-  nav a { flex: 0 0 auto; } /* prevent shrinking */
-}
-
-    
-    /* Footer (exact match) */
+    /* Footer */
     footer {
       width: 100%;
       text-align: center;
@@ -70,7 +36,7 @@
     }
 
     /* Page-specific styles */
-    .wrap { width:100%; max-width:1200px; padding:28px 16px; margin:auto; }
+    .wrap { width:100%; max-width:1200px; padding:28px 16px; margin:100px auto 40px; }
     h1 {
       margin:24px 0 8px;
       font-size:36px;
@@ -108,18 +74,21 @@
     @media (max-width:640px){
       h1{font-size:28px}
       .sub{font-size:16px}
+      .wrap { margin-top: 80px; }
     }
   </style>
 </head>
 <body>
-  <!-- Navigation (updated) -->
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="learnmore.html">Learn More</a>
-    <a href="concepts.html">Concepts in Development</a>
-    <a href="about_brittany.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+
+  <header>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="learnmore.html">Learn More</a>
+      <a href="concepts.html" aria-current="page">Concepts in Development</a>
+      <a href="about_brittany.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
   <main class="wrap">
     <h1>Concepts in Development</h1>
@@ -173,6 +142,17 @@
   <footer>
     © 2025 Brittany L. Stratton. Pedagogy of Humanity ™. All Rights Reserved.
   </footer>
+
+  <!-- Optional: auto-highlight current link if you duplicate this template later -->
+  <script>
+    (function(){
+      const here = location.pathname.split('/').pop() || 'index.html';
+      document.querySelectorAll('.site-nav a').forEach(a=>{
+        const href = a.getAttribute('href');
+        if (href === here) a.setAttribute('aria-current','page');
+        else a.removeAttribute('aria-current');
+      });
+    })();
+  </script>
 </body>
 </html>
-
