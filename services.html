@@ -2,164 +2,194 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Services • Pedagogy of Humanity</title>
-  <meta name="description" content="Browse services and sample materials for the Pedagogy of Humanity." />
+  <meta name="description" content="Explore services offered by Brittany L. Stratton through the Pedagogy of Humanity — including free consultations, advocacy, IEP reviews, and family supports." />
 
   <!-- Global styles -->
   <link rel="stylesheet" href="rebuild/css/base.css">
   <link rel="stylesheet" href="rebuild/css/navstyle.css">
+  <link rel="stylesheet" href="rebuild/css/lightbox.css">
 
-  <!-- Page-specific styles -->
+  <!-- Page-specific -->
   <style>
     body {
-      background:#d6dce1; margin:0; min-height:100vh;
-      display:flex; flex-direction:column; align-items:stretch;
+      background-color: #d6dce1;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .wrap { width:100%; max-width:1200px; padding:40px 16px; margin:auto; }
+    h1 {
+      text-align:center;
+      font-family:Garamond, serif;
+      font-size:36px;
+      margin:16px 0 8px;
+      color:#313647;
+    }
+    .sub {
+      text-align:center;
+      font-style:italic;
+      color:#5b6277;
+      margin:0 0 28px;
       font-family:Garamond, serif;
     }
-    .wrap { width:100%; max-width:1100px; margin:100px auto 60px; padding:0 16px; }
-    h1 { margin:0 0 8px; text-align:center; color:#313647; font-size:36px; }
-    .sub { margin:0 0 28px; text-align:center; color:#5b6277; font-style:italic; }
 
-    /* Gallery grid */
+    /* Grid of services */
     .grid {
-      display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
-      gap:18px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(240px,1fr));
+      gap:20px;
     }
     .card {
-      background:#fff; border-radius:12px; box-shadow:0 6px 16px rgba(0,0,0,.08);
-      padding:12px; display:flex; flex-direction:column; gap:10px;
+      background:#fff;
+      border-radius:12px;
+      box-shadow:0 6px 16px rgba(0,0,0,.08);
+      overflow:hidden;
+      transition:transform .18s ease, box-shadow .18s ease;
+      text-align:center;
+    }
+    .card:hover {
+      transform:translateY(-2px);
+      box-shadow:0 10px 24px rgba(0,0,0,.12);
     }
     .thumb {
-      aspect-ratio:4/3; background:#e9edf0; border-radius:10px; overflow:hidden;
-      display:flex; align-items:center; justify-content:center;
+      width:100%;
+      aspect-ratio:4/3;
+      overflow:hidden;
+      background:#e9edf0;
     }
-    .thumb img { width:100%; height:100%; object-fit:cover; display:block; }
-    .title { margin:0; font-size:18px; color:#313647; }
-    .meta { margin:0; color:#5b6277; font-size:14px; }
+    .thumb img {
+      width:100%;
+      height:100%;
+      object-fit:contain;
+      display:block;
+    }
+    .card h3 {
+      margin:12px 0;
+      font-family:Garamond, serif;
+      font-size:20px;
+      color:#313647;
+    }
+    .card a {
+      display:inline-block;
+      margin-bottom:16px;
+      font-size:16px;
+      color:#2c7a7b;
+      text-decoration:underline;
+    }
 
-    /* Lightbox */
-    .lightbox {
-      position:fixed; inset:0; background:rgba(0,0,0,.6); display:none;
-      align-items:center; justify-content:center; padding:24px; z-index:2000;
-    }
-    .lightbox:target { display:flex; }
-    .lightbox-inner {
-      width:min(90vw, 1000px); max-height:90vh; background:#fff; border-radius:12px;
-      box-shadow:0 10px 30px rgba(0,0,0,.3); overflow:hidden; position:relative;
-    }
-    .lightbox .close {
-      position:absolute; top:10px; right:12px; background:#2c7a7b; color:#fff;
-      text-decoration:none; border-radius:999px; padding:6px 10px; font-size:14px;
-    }
-    .lb-media img { display:block; width:100%; height:auto; max-height:90vh; }
-    .lb-media iframe { display:block; width:100%; height:80vh; border:0; background:#fff; }
-    .backdrop { position:absolute; inset:0; display:block; }
-    .lightbox-inner, .lightbox .close { position:relative; z-index:1; }
-
-    footer {
-      width:100%; text-align:center; color:#313647; font-style:italic; font-size:18px;
-      padding-bottom:96px; margin-top:auto;
-    }
     @media (max-width:640px) {
       h1 { font-size:28px; }
-      .wrap { margin-top:80px; }
+      .sub { font-size:16px; }
+    }
+
+    footer {
+      width: 100%;
+      text-align: center;
+      color: #313647;
+      font-family: Garamond, serif;
+      font-style: italic;
+      font-size: 18px;
+      padding-bottom: 96px;
+      margin-top: auto;
     }
   </style>
 </head>
 <body>
-  <!-- Temporary nav (replace with global later) -->
-  <nav class="site-nav" aria-label="Primary">
+  <!-- Global navbar -->
+  <nav class="site-nav">
     <a href="index.html">Home</a>
     <a href="learnmore.html">Learn More</a>
     <a href="concepts.html">Concepts in Development</a>
     <a href="about_brittany.html">About</a>
     <a href="contact.html">Contact</a>
+    <a href="services.html" aria-current="page">Services</a>
   </nav>
 
   <main class="wrap">
     <h1>Services</h1>
-    <p class="sub">Click a preview to enlarge. PDFs open in a scrollable overlay.</p>
+    <p class="sub">Explore offerings and click to view details in PDF format.</p>
 
     <section class="grid">
-      <!-- 15min -->
-      <article class="card">
-        <a class="thumb" href="#15min">
-          <img src="assets/15minpic.png" alt="15 Minute Service thumbnail">
-        </a>
-        <h3 class="title">15 Minute Service</h3>
-        <p class="meta">PDF • Click to view</p>
-      </article>
+      <!-- Card 1 -->
+      <figure class="card">
+        <div class="thumb">
+          <a href="#lb-15min"><img src="assets/15minpic.png" alt="Preview of Free 15 Minute Consultation PDF" /></a>
+        </div>
+        <h3>FREE 15 Minute Consultation</h3>
+        <a href="#lb-15min">View PDF</a>
+      </figure>
 
-      <!-- Adv Service -->
-      <article class="card">
-        <a class="thumb" href="#adv_service">
-          <img src="assets/adv_servicepic.png" alt="Advanced Service thumbnail">
-        </a>
-        <h3 class="title">Advanced Service</h3>
-        <p class="meta">PDF • Click to view</p>
-      </article>
+      <!-- Card 2 -->
+      <figure class="card">
+        <div class="thumb">
+          <a href="#lb-all"><img src="assets/one_page_servicepic.png" alt="Preview of All Services PDF" /></a>
+        </div>
+        <h3>All Services</h3>
+        <a href="#lb-all">View PDF</a>
+      </figure>
 
-      <!-- IEP Review Service -->
-      <article class="card">
-        <a class="thumb" href="#iep_review_service">
-          <img src="assets/iep_reviewpic.png" alt="IEP Review Service thumbnail">
-        </a>
-        <h3 class="title">IEP Review Service</h3>
-        <p class="meta">PDF • Click to view</p>
-      </article>
+      <!-- Card 3 -->
+      <figure class="card">
+        <div class="thumb">
+          <a href="#lb-family"><img src="assets/adv_servicepic.png" alt="Preview of Services for Families PDF" /></a>
+        </div>
+        <h3>Services for Families</h3>
+        <a href="#lb-family">View PDF</a>
+      </figure>
 
-      <!-- One Page Service -->
-      <article class="card">
-        <a class="thumb" href="#one_page_services">
-          <img src="assets/one_page_servicepic.png" alt="One Page Service thumbnail">
-        </a>
-        <h3 class="title">One Page Service</h3>
-        <p class="meta">PDF • Click to view</p>
-      </article>
+      <!-- Card 4 -->
+      <figure class="card">
+        <div class="thumb">
+          <a href="#lb-iep"><img src="assets/iep_reviewpic.png" alt="Preview of IEP Review Service PDF" /></a>
+        </div>
+        <h3>IEP Review Service</h3>
+        <a href="#lb-iep">View PDF</a>
+      </figure>
     </section>
   </main>
 
   <!-- Lightboxes -->
-  <section id="15min" class="lightbox">
-    <a class="backdrop" href="#"></a>
+  <div id="lb-15min" class="lightbox">
     <div class="lightbox-inner">
-      <a class="close" href="#">✕</a>
+      <a href="#" class="close">&times;</a>
       <div class="lb-media">
-        <iframe src="assets/15min.pdf#view=FitH" title="15 Minute Service PDF"></iframe>
+        <iframe src="assets/15min.pdf"></iframe>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section id="adv_service" class="lightbox">
-    <a class="backdrop" href="#"></a>
+  <div id="lb-all" class="lightbox">
     <div class="lightbox-inner">
-      <a class="close" href="#">✕</a>
+      <a href="#" class="close">&times;</a>
       <div class="lb-media">
-        <iframe src="assets/adv_service.pdf#view=FitH" title="Advanced Service PDF"></iframe>
+        <iframe src="assets/one_page_services.pdf"></iframe>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section id="iep_review_service" class="lightbox">
-    <a class="backdrop" href="#"></a>
+  <div id="lb-family" class="lightbox">
     <div class="lightbox-inner">
-      <a class="close" href="#">✕</a>
+      <a href="#" class="close">&times;</a>
       <div class="lb-media">
-        <iframe src="assets/iep_review_service.pdf#view=FitH" title="IEP Review Service PDF"></iframe>
+        <iframe src="assets/adv_service.pdf"></iframe>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section id="one_page_services" class="lightbox">
-    <a class="backdrop" href="#"></a>
+  <div id="lb-iep" class="lightbox">
     <div class="lightbox-inner">
-      <a class="close" href="#">✕</a>
+      <a href="#" class="close">&times;</a>
       <div class="lb-media">
-        <iframe src="assets/one_page_services.pdf#view=FitH" title="One Page Service PDF"></iframe>
+        <iframe src="assets/iep_review_service.pdf"></iframe>
       </div>
     </div>
-  </section>
+  </div>
 
   <footer>
     © 2025 Brittany L. Stratton. Pedagogy of Humanity ™. All Rights Reserved.
