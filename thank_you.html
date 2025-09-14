@@ -4,38 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Thank You • Pedagogy of Humanity</title>
+  <meta name="description" content="Thank you for contacting Brittany L. Stratton at the Pedagogy of Humanity." />
+
+  <!-- Global styles -->
+  <link rel="stylesheet" href="rebuild/css/base.css">
+  <link rel="stylesheet" href="rebuild/css/navstyle.css">
+
+  <!-- Page-specific styles -->
   <style>
     body {
       margin: 0;
-      background-color: #d6dce1;     /* match index.html */
+      background-color: #d6dce1;
       color: #313647;
       display: flex;
       flex-direction: column;
+      align-items: stretch;   /* full-width header/footer */
       min-height: 100vh;
       font-family: Garamond, serif;
-      align-items: center;            /* match index.html */
     }
-    /* Nav — exact base match */
-    nav {
-      background-color: #2c7a7b;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      padding: 16px 0;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 18px;
-      transition: color 0.3s ease;
-    }
-    nav a:hover { color: #d6dce1; }
+    header { width: 100%; }
 
-    /* Page layout */
     .wrap {
       flex: 1;
       width: 100%;
@@ -67,7 +55,6 @@
     }
     .cta:hover { opacity: .9; }
 
-    /* Footer — exact match */
     footer {
       width: 100%;
       text-align: center;
@@ -77,33 +64,19 @@
       padding-bottom: 96px;
       margin-top: auto;
     }
-
-    /* Mobile-friendly navbar tweaks */
-    @media (max-width: 700px){
-      nav { flex-wrap: wrap; gap: 16px; padding: 12px 8px; }
-      nav a { font-size: 16px; }
-    }
-    @media (max-width: 420px){
-      nav {
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        overflow-x: auto;
-        white-space: nowrap;
-        gap: 24px;
-        padding: 10px 8px;
-      }
-      nav a { flex: 0 0 auto; }
-    }
   </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="learnmore.html">Learn More</a>
-    <a href="concepts.html">Concepts in Development</a>
-    <a href="about_brittany.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+
+  <header>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="learnmore.html">Learn More</a>
+      <a href="concepts.html">Concepts in Development</a>
+      <a href="about_brittany.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
   <main class="wrap">
     <h1>Thank you!</h1>
