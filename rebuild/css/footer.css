@@ -5,25 +5,25 @@
 .site-footer {
   width: 100%;
   text-align: center;
-  color: #313647;              /* dark ink */
+  color: #313647;
   font-family: Garamond, serif;
   font-style: italic;
-  font-size: 18px;
-  padding: 24px 16px 96px;     /* breathing room at bottom */
+  font-size: 16px;
+  padding: 24px 16px 96px;
   margin-top: auto;
-  background: transparent;     /* can switch to solid if needed */
+  background: none; /* clean background */
 }
 
-/* Links inside footer */
 .site-footer a {
-  color: #2c7a7b;              /* brand teal for links */
+  color: #2c7a7b;       /* brand teal */
   text-decoration: underline;
-  text-underline-offset: 3px;
-  transition: color 0.3s ease;
+  margin: 0 8px;
+  font-style: normal;   /* distinguish links from italic base text */
+  font-size: 15px;
 }
 
 .site-footer a:hover {
-  color: #014d4e;              /* darker teal hover */
+  color: #014d4e;
 }
 
 /* Smaller screens: shrink font slightly */
