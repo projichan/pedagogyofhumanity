@@ -9,34 +9,10 @@
   <!-- Global styles -->
   <link rel="stylesheet" href="rebuild/css/base.css">
   <link rel="stylesheet" href="rebuild/css/navstyle.css">
+  <link rel="stylesheet" href="rebuild/css/footer.css">
 
   <!-- Page-specific styles -->
   <style>
-    /* Base */
-    body {
-      background-color: #d6dce1;
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: stretch; /* full-width header/footer */
-    }
-    header { width: 100%; }
-
-    /* Footer */
-    footer {
-      width: 100%;
-      text-align: center;
-      color: #313647;
-      font-family: Garamond, serif;
-      font-style: italic;
-      font-size: 18px;
-      padding-bottom: 96px;
-      margin-top: auto;
-    }
-
-    /* Page-specific styles (from your version) */
     .wrap{width:100%;max-width:900px;padding:40px 16px;margin:100px auto 40px}
     h1,h2{font-family:Garamond,serif;color:#313647}
     h1{font-size:36px;margin:16px 0 8px;text-align:center}
@@ -57,8 +33,12 @@
 
     ul{margin:10px 0 0 18px}
     li{margin:6px 0}
-    .cta{display:inline-block;margin-top:12px;background:#2c7a7b;color:#fff;padding:10px 16px;border-radius:6px;text-decoration:none;font-family:Garamond,serif}
+
+    /* CTA buttons */
+    .cta{display:inline-block;background:#2c7a7b;color:#fff;padding:10px 16px;border-radius:6px;text-decoration:none;font-family:Garamond,serif}
     .cta:hover{opacity:.9}
+    .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:12px}
+    .cta-row .cta{flex:0 0 auto}
 
     @media (max-width:640px){
       h1{font-size:28px}
@@ -71,15 +51,15 @@
 <body>
 
   <header>
-   <nav class="site-nav" aria-label="Primary">
-  <a href="index.html">Home</a>
-  <a href="learnmore.html">Learn More</a>
-  <a href="llc.html">Pedagogy of Humanity, LLC</a>
-  <a href="services.html">Services</a>
-  <a href="concepts.html">Concepts in Development</a>
-  <a href="about_brittany.html" aria-current="page">About</a>
-  <a href="contact.html">Contact</a>
-</nav>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="learnmore.html">Learn More</a>
+      <a href="llc.html">Pedagogy of Humanity, LLC</a>
+      <a href="services.html">Services</a>
+      <a href="concepts.html">Concepts in Development</a>
+      <a href="about_brittany.html" aria-current="page">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
   
   <main class="wrap">
@@ -104,7 +84,12 @@
         <p>
           Today, Brittany is building the Pedagogy of Humanity as both a philosophy and a practical framework. It begins with the recognition of each person’s humanity and insists that safety and dignity are not luxuries, but rights of birth. Through her writing, research, and teaching, she creates spaces where scars are not hidden but honored, and where education becomes an act of love.
         </p>
-        <a class="cta" href="contact.html">Invite me to speak or collaborate</a>
+
+        <!-- Button row: Contact (left) + Request Help (right) -->
+        <div class="cta-row">
+          <a class="cta" href="contact.html">Invite me to speak or collaborate</a>
+          <a class="cta" href="services.html">Request Help Today</a>
+        </div>
       </div>
     </section>
 
@@ -147,14 +132,6 @@
     </section>
 
     <section class="section card">
-      <h2>Why This Site Is Independent</h2>
-      <p>
-        This site is an independent home for the Pedagogy of Humanity — separate from any institution — so its voice,
-        integrity, and evolution remain with its community of practice.
-      </p>
-    </section>
-
-    <section class="section card">
       <h2>Connect</h2>
       <p>
         If the Pedagogy of Humanity resonates with your work — or your hope for what education can be — I’d love to talk.
@@ -163,21 +140,12 @@
     </section>
   </main>
 
-  <footer>
-    © 2025 Brittany L. Stratton. Pedagogy of Humanity ™. All Rights Reserved.
+  <footer class="site-footer">
+    <p>© 2025 Brittany L. Stratton. Pedagogy of Humanity ™. All Rights Reserved.</p>
+    <p>
+      <a href="terms_of_service.html">Terms of Service</a> |
+      <a href="privacypolicy.html">Privacy Policy</a>
+    </p>
   </footer>
-
-  <!-- Optional: auto-highlight current link if you reuse this template later -->
-  <script>
-    (function(){
-      const here = location.pathname.split('/').pop() || 'index.html';
-      document.querySelectorAll('.site-nav a').forEach(a=>{
-        const href = a.getAttribute('href');
-        if (href === here) a.setAttribute('aria-current','page');
-        else a.removeAttribute('aria-current');
-      });
-    })();
-  </script>
 </body>
 </html>
-
