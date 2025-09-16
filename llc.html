@@ -1,29 +1,129 @@
+Or alternatively, it could mirror the learnmore page:
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pedagogy of Humanity, LLC</title>
+  <title>About Pedagogy of Humanity, LLC • Pedagogy of Humanity</title>
 
   <!-- Global styles -->
   <link rel="stylesheet" href="rebuild/css/base.css">
   <link rel="stylesheet" href="rebuild/css/navstyle.css">
 
   <!-- Page-specific styles -->
-  <link rel="stylesheet" href="rebuild/css/learnmore.css"> <!-- optional: reuse same file -->
+ <style>
+  body {
+    background-color: #d6dce1;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;  /* ✅ full-width children instead of centered */
+  }
+
+  header {
+    width: 100%;  /* ✅ make header always span full screen */
+    margin: 0;
+    padding: 0;
+  }
+
+  .wrap { 
+    width: 100%; 
+    max-width: 1000px; 
+    padding: 40px 16px; 
+    margin: 100px auto 40px; 
+  }
+
+  .content-wrapper {
+    max-width: 800px;
+    margin: 0 auto 28px;
+    background-color: rgba(44, 122, 123, 0.3);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+  }
+  .content-wrapper h2 {
+    font-style: italic;
+    font-size: 30pt;
+    margin-bottom: 20px;
+    color:#313647;
+    font-family: Garamond, serif;
+  }
+
+  .decorative-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px auto;
+    max-width: 220px;
+  }
+  .decorative-line .line { height: 1px; flex: 1; background-color: #313647; }
+  .decorative-line .dot { width: 6px; height: 6px; background-color: #313647; border-radius: 50%; }
+
+  .content-wrapper p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 16px 0;
+    color:#313647;
+    font-family: Garamond, serif;
+  }
+  .content-wrapper p strong { font-weight: bold; }
+
+  .section { margin:28px auto; max-width:1000px; padding:0 16px; }
+  .two-col { display:grid; grid-template-columns:1fr; gap:20px; }
+  .card {
+    background:#fff;
+    border-radius:12px;
+    box-shadow:0 6px 16px rgba(0,0,0,.08);
+    padding:18px;
+  }
+  h2 { color:#313647; margin:0 0 8px; font-family: Garamond, serif; }
+  ul { margin:10px 0 0 18px; }
+  li { margin:6px 0; }
+
+  @media (min-width:820px) { .two-col { grid-template-columns:1fr 1fr; } }
+
+  * { box-sizing: border-box; }
+  img { max-width: 100%; height: auto; display: block; }
+
+  @media (max-width:640px) {
+    .wrap { margin-top: 80px; padding: 24px 14px; }
+    .content-wrapper { padding: 28px 18px; }
+    .section.two-col .card { padding: 16px; }
+    .decorative-line { max-width: 180px; gap: 10px; }
+    .content-wrapper h2 { font-size: 26px; line-height: 1.2; }
+    h2 { font-size: 22px; line-height: 1.25; }
+    .content-wrapper p, li { font-size: 16px; line-height: 1.55; }
+  }
+
+  footer {
+    width: 100%;
+    text-align: center;
+    color: #313647;
+    font-family: Garamond, serif;
+    font-style: italic;
+    font-size: 18px;
+    padding-bottom: 96px;
+    margin-top: auto;
+  }
+</style>
+
 </head>
 <body>
 
   <header>
-    <nav class="site-nav" aria-label="Primary">
-      <a href="index.html">Home</a>
-      <a href="learnmore.html">Learn More</a>
-      <a href="services.html">Services</a>
-      <a href="concepts.html">Concepts in Development</a>
-      <a href="llc.html" aria-current="page">About PoH</a>
-      <a href="about_brittany.html">About the Founder</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <nav class="site-nav" aria-label="Primary">
+  <a href="index.html">Home</a>
+  <a href="learnmore.html" >Learn More</a>
+  <a href="llc.html" aria-current="page">Pedagogy of Humanity, LLC</a>  
+  <a href="services.html">Services</a>
+  <a href="concepts.html">Concepts in Development</a>
+  <a href="about_brittany.html">About</a>
+  <a href="contact.html">Contact</a>
+</nav>
   </header>
 
   <main class="wrap">
@@ -34,8 +134,15 @@
         <div class="dot"></div>
         <div class="line"></div>
       </div>
-      <p><strong>A trauma-responsive educational consulting & creative resource company.</strong></p>
-      <p>Use this space for your opening statement — what PoH is, why it exists, and who it serves.</p>
+      <p>Pedagogy of Humanity, LLC provides research-informed consultation and advocacy specializing in trauma-responsive education working across the ecosystem—equipping families with tools and advocacy to strengthen home–school connections, supporting PreK–12 educators to reframe their practice through a trauma-responsive lens, and helping teacher-prep programs embed trauma-responsive design into their curriculum.
+      </p>
+
+      <p>Teachers aren’t burning out because they don’t care—they’re burning out because no one taught them how to respond to trauma. There are currently no undergraduate teacher-prep programs that incorporate trauma-responsive learning into their curriculum. This leaves new teachers stepping into classrooms without the tools to recognize or respond to trauma-behaviors.
+
+In PreK–12 schools, the result is classrooms that feel unsafe, overwhelmed educators, and burnout that drives teachers out of the profession. Families, too, often find themselves without the strategies or support to navigate behavioral challenges at home—further straining the home–school connection.
+
+Both universities and school systems urgently need ways to bridge this gap, and families need accessible tools to build resilience at home. Without these supports, teachers and caregivers alike remain underprepared, students lose stability, and communities bear the costs of burnout and lost potential.
+</p>
     </div>
 
     <section class="section two-col">
@@ -45,50 +152,25 @@
           <li><strong>Safety is the highest form of love.</strong></li>
           <li><strong>No act of kindness done in love is ever wasted.</strong></li>
           <li><strong>In all things, teach.</strong></li>
+      
         </ul>
         <p style="margin-top:12px; font-family:Garamond, serif;">
-          Swap in your flavor text here — explain how these values shape the business.
+         Teachers and families are burning out not from lack of care, but from lack of trauma-responsive tools.
         </p>
       </div>
 
-      <div class="card">
-        <h2>What We Do</h2>
-        <ul>
-          <li>Research & Thought Leadership</li>
-          <li>Consulting & Training</li>
-          <li>Creative Resources & Publications</li>
-        </ul>
-        <p style="margin-top:12px; font-family:Garamond, serif;">
-          Short supporting text describing your services and focus.
-        </p>
-      </div>
-    </section>
-
-    <section class="section two-col">
       <div class="card">
         <h2>Vision</h2>
-        <p>
-          A forward-looking statement about building the field of Educational Traumatology, 
-          trauma-responsive curricula, and long-term dreams for PoH.
+        <p style="margin-top:12px; font-family:Garamond, serif;">
+          Trauma-responsive education that sustains families, teachers, and institutions—not just classrooms.
+          Brittany brings trauma-responsive practice into teacher-prep programs, PreK–12 schools, and families. 
+          For universities, she consult on curriculum design, embedding trauma-informed frameworks into undergraduate programs so new teachers graduate ready for the realities of trauma-behaviors. 
+          For schools, she provides training and consultation that helps educators reframe their practice through a trauma-responsive lens. 
+          For families, she offer tools, advocacy, and holistic support to strengthen home–school connections and reduce stress at home.
         </p>
-      </div>
-
-      <div class="card">
-        <h2>Founded by Brittany L. Stratton</h2>
-        <p>
-          Learn more about the person behind PoH.
-        </p>
-        <p><a href="about_brittany.html">About the Founder →</a></p>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="card">
-        <h2>Business Details</h2>
-        <p>
-          Pedagogy of Humanity, LLC is a West Virginia registered company.  
-          For partnerships and media inquiries, contact
-          <a href="mailto:hello@your-domain.example">hello@your-domain.example</a>.
+       <p>
+          Her approach emphasizes resilience, empathy, compassion, and self-care—because preparing teachers and supporting families isn’t just about managing trauma-behaviors, it’s about equipping people to stay grounded and whole in the process. 
+          By centering these values, her work creates safer classrooms, reduces burnout, strengthens families, and sustains institutions for the long term.
         </p>
       </div>
     </section>
