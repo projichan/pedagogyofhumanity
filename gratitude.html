@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Wall of Gratitude • Pedagogy of Humanity</title>
+  <meta name="description" content="Honoring the people and communities whose support helped bring Pedagogy of Humanity, LLC to life. Join the wall via Patreon." />
 
   <!-- Global styles -->
   <link rel="stylesheet" href="rebuild/css/base.css">
   <link rel="stylesheet" href="rebuild/css/navstyle.css">
   <link rel="stylesheet" href="rebuild/css/footer.css">
-
+  <link rel="stylesheet" href="rebuild/css/button.css"><!-- optional, if you create it -->
   <!-- Page-specific styles -->
   <link rel="stylesheet" href="rebuild/css/gratitude.css">
+
+  <!-- Page-level spacing to match About page -->
+  <style>
+    .wrap{width:100%;max-width:900px;padding:40px 16px;margin:100px auto 40px}
+    header.page-head h1{font-size:36px;margin:16px 0 8px;text-align:center}
+    header.page-head p.lead{font-style:italic;color:#5b6277;text-align:center;max-width:720px;margin:0 auto 12px}
+    @media (max-width:640px){ header.page-head h1{font-size:28px}; .wrap{margin-top:80px} }
+  </style>
 </head>
 <body>
 
-  <!-- Global Nav -->
+  <!-- Global Nav (your updated block) -->
   <nav class="site-nav" aria-label="Primary">
-
-    <!-- Home -->
     <a href="index.html" class="nav-item">
-      <img src="assets/icons/home.svg" alt="" aria-hidden="true" class="icon">
-      <span>Home</span>
+      <img src="assets/icons/home.svg" alt="" aria-hidden="true" class="icon"><span>Home</span>
     </a>
-
-    <!-- The Framework -->
     <details class="nav-group">
       <summary class="nav-item" aria-haspopup="menu">
-        <img src="assets/icons/framework.svg" alt="" aria-hidden="true" class="icon">
-        <span>The Framework</span>
+        <img src="assets/icons/framework.svg" alt="" aria-hidden="true" class="icon"><span>The Framework</span>
       </summary>
       <div class="submenu" role="menu" aria-label="The Framework">
         <a role="menuitem" href="learnmore.html">The Pedagogy of Humanity</a>
@@ -37,12 +40,9 @@
         <a role="menuitem" href="concepts.html">Concepts in Development</a>
       </div>
     </details>
-
-    <!-- Explore Help -->
     <details class="nav-group">
       <summary class="nav-item" aria-haspopup="menu">
-        <img src="assets/icons/explore.svg" alt="" aria-hidden="true" class="icon">
-        <span>Explore Help</span>
+        <img src="assets/icons/explore.svg" alt="" aria-hidden="true" class="icon"><span>Explore Help</span>
       </summary>
       <div class="submenu" role="menu" aria-label="Explore Help">
         <a role="menuitem" href="services.html">Overview</a>
@@ -51,50 +51,42 @@
         <a role="menuitem" href="booking.html">Booking</a>
       </div>
     </details>
-
-    <!-- Purchase Resources -->
     <a href="https://pedagogyproducts.com" class="nav-item">
-      <img src="assets/icons/purchase.svg" alt="" aria-hidden="true" class="icon">
-      <span>Purchase Resources</span>
+      <img src="assets/icons/purchase.svg" alt="" aria-hidden="true" class="icon"><span>Purchase Resources</span>
     </a>
-
-    <!-- About -->
     <details class="nav-group">
       <summary class="nav-item" aria-haspopup="menu">
-        <img src="assets/icons/about.svg" alt="" aria-hidden="true" class="icon">
-        <span>About</span>
+        <img src="assets/icons/about.svg" alt="" aria-hidden="true" class="icon"><span>About</span>
       </summary>
       <div class="submenu" role="menu" aria-label="About">
-        <a role="menuitem" href="gratitude.html">Wall of Gratitude</a>
+        <a role="menuitem" href="gratitude.html" aria-current="page">Wall of Gratitude</a>
         <a role="menuitem" href="about_brittany.html">About Brittany</a>
-        <a role="menuitem" href="llc.html">About Pedagogy of Humanity, LLC</a>   
+        <a role="menuitem" href="llc.html">About Pedagogy of Humanity, LLC</a>
         <a role="menuitem" href="terms_of_service.html">Terms of Service</a>
         <a role="menuitem" href="privacypolicy.html">Privacy Policy</a>
       </div>
     </details>
-
-    <!-- Contact -->
     <a href="contact.html" class="nav-item">
-      <img src="assets/icons/contact.svg" alt="" aria-hidden="true" class="icon">
-      <span>Contact</span>
+      <img src="assets/icons/contact.svg" alt="" aria-hidden="true" class="icon"><span>Contact</span>
     </a>
-
   </nav>
 
-  <!-- Gratitude Content -->
-  <header>
-    <h1>Wall of Gratitude</h1>
-    <p>
-      This page honors the people and communities who helped bring 
-      <strong>Pedagogy of Humanity, LLC</strong> to life.  
-    </p>
-    <p>
-      Thank you for your care, time, and belief in this work. You truly embody 
-      the belief that <em>no act of kindness done in love is ever wasted.</em>
-    </p>
-  </header>
+  <main class="wrap">
+    <header class="page-head">
+      <h1>Wall of Gratitude</h1>
+      <p class="lead">
+        This page honors the people and communities who helped bring <strong>Pedagogy of Humanity, LLC</strong> to life.
+      </p>
+      <p class="lead">
+        Thank you for your care, time, and belief in this work. You truly embody the belief that
+        <em>no act of kindness done in love is ever wasted.</em>
+      </p>
+      <p style="text-align:center;margin-top:10px">
+        <a class="button" href="https://www.patreon.com/cw/PedagogyofHumanity">Support on Patreon</a>
+      </p>
+    </header>
 
-  <main>
+    <!-- Tiers -->
     <section class="gratitude-tier">
       <h2>Wall of Gratitude</h2>
       <ul>
@@ -131,22 +123,20 @@
       </ul>
     </section>
 
-    <section class="patreon">
-      <h2>Join the Wall</h2>
-      <p>Your support makes this work possible. Add your name by becoming a supporter on Patreon!</p>
-      <a href="https://www.patreon.com/cw/PedagogyofHumanity" class="button">Support on Patreon</a>
+    <section class="patreon" aria-labelledby="join">
+      <h2 id="join" class="visually-hidden">Join the Wall</h2>
+      <p>Your support makes this work possible. Add your name by becoming a supporter on Patreon.</p>
+      <a class="button" href="https://www.patreon.com/cw/PedagogyofHumanity">Become a patron →</a>
     </section>
   </main>
 
-  <!-- Global Footer -->
   <footer class="site-footer">
-    <p>&copy; 2025 Pedagogy of Humanity, LLC. All rights reserved.</p>
-    <nav>
+    <p>© 2025 Brittany L. Stratton. Pedagogy of Humanity ™. All Rights Reserved.</p>
+    <p>
       <a href="terms_of_service.html">Terms of Service</a> |
       <a href="privacypolicy.html">Privacy Policy</a>
-    </nav>
+    </p>
   </footer>
-
 </body>
 </html>
 
