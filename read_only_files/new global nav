@@ -11,41 +11,67 @@
 
 UPDATED 9/26 FOR A11Y/WCAG
 NEW STRUCTURE:
-HOME = INDEX.HTML
-THE FRAMEWORK =LEARNMORE.HTML
-EXPLORE HELP = SERVICES.HTML
-PURCHASE RESOURCES =PEDAGOGYPRODUCTS.COM
-ABOUT = ADD NEW ABOUT PAGE
-CONTACT = CONTACT
-
 <nav class="site-nav" aria-label="Primary">
-<a href="index.html">
-  <img src="assets/icons/home.svg" alt="" aria-hidden="true" class="icon">
-  <span>Home</span>
-</a>
 
-  <a href="learnmore.html">
-  <img src="assets/icons/framework.svg" alt="" aria-hidden="true" class="icon">
-<span>Learn More</span>
-</a>
+  <!-- Home -->
+  <a href="index.html" class="nav-item">
+    <img src="assets/icons/home.svg" alt="" aria-hidden="true" class="icon">
+    <span>Home</span>
+  </a>
 
-  <a href="services.html">
-  <img src="assets/icons/explore.svg" alt="" aria-hidden="true" class="icon">
-<span>Explore Help</span>
-</a>
+  <!-- The Framework -->
+  <details class="nav-group">
+    <summary class="nav-item" aria-haspopup="menu">
+      <img src="assets/icons/framework.svg" alt="" aria-hidden="true" class="icon">
+      <span>The Framework</span>
+    </summary>
+    <div class="submenu" role="menu" aria-label="The Framework">
+      <a role="menuitem" href="learnmore.html">The Pedagogy of Humanity</a>
+      <a role="menuitem" href="research.html">Research</a>
+      <a role="menuitem" href="posts.html">Posts</a>
+      <a role="menuitem" href="concepts.html">Concepts in Development</a>
+    </div>
+  </details>
 
-  <a href="pedagogyproducts.com">
-  <img src="assets/icons/purchase.svg" alt="" aria-hidden="true" class="icon">
-<span>Purchase Resources</span>
-</a>
+  <!-- Explore Help -->
+  <details class="nav-group">
+    <summary class="nav-item" aria-haspopup="menu">
+      <img src="assets/icons/explore.svg" alt="" aria-hidden="true" class="icon">
+      <span>Explore Help</span>
+    </summary>
+    <div class="submenu" role="menu" aria-label="Explore Help">
+      <a role="menuitem" href="services.html">Overview</a>
+      <a role="menuitem" href="families.html">Services for Families</a>
+      <a role="menuitem" href="organizations.html">Services for Organizations</a>
+      <a role="menuitem" href="booking.html">Booking</a>
+    </div>
+  </details>
 
-  <a href="about.html">
-  <img src="assets/icons/about.svg" alt="" aria-hidden="true" class="icon">
-<span>About</span>
-</a>
+  <!-- Purchase Resources -->
+  <a href="https://pedagogyproducts.com" class="nav-item">
+    <img src="assets/icons/purchase.svg" alt="" aria-hidden="true" class="icon">
+    <span>Purchase Resources</span>
+  </a>
 
-  <a href="contact.html">
-  <img src="assets/icons/contact.svg" alt="" aria-hidden="true" class="icon">
-<span>Contact</span>
-</a>
+  <!-- About -->
+  <details class="nav-group">
+    <summary class="nav-item" aria-haspopup="menu">
+      <img src="assets/icons/about.svg" alt="" aria-hidden="true" class="icon">
+      <span>About</span>
+    </summary>
+    <div class="submenu" role="menu" aria-label="About">
+      <a role="menuitem" href="about_brittany.html">About Brittany</a>
+      <a role="menuitem" href="llc.html">About Pedagogy of Humanity, LLC</a>
+      <a role="menuitem" href="gratitude.html">Wall of Gratitude</a>
+      <a role="menuitem" href="terms_of_service.html">Terms of Service</a>
+      <a role="menuitem" href="privacypolicy.html">Privacy Policy</a>
+    </div>
+  </details>
+
+  <!-- Contact -->
+  <a href="contact.html" class="nav-item">
+    <img src="assets/icons/contact.svg" alt="" aria-hidden="true" class="icon">
+    <span>Contact</span>
+  </a>
+
 </nav>
