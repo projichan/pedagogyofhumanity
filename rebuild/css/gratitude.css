@@ -1,1 +1,94 @@
+/* ========== Wall of Gratitude — Page Styles ========== */
+:root {
+  --page-max: 900px;
+  --text: #0f172a;             /* slate-900 */
+  --muted: #475569;            /* slate-600 */
+  --card-bg: #ffffff;
+  --border: #e2e8f0;           /* slate-200 */
+  --chip: #d6dce1;             /* your light gray */
+  --accent: #2c7a7b;           /* your teal */
+  --accent-dark: #1f5f61;
+  --focus: #014d4e;
+}
+
+/* Layout */
+body { color: var(--text); }
+main { max-width: var(--page-max); margin: 0 auto; padding: 24px 16px; }
+header { max-width: var(--page-max); margin: 0 auto; padding: 16px 16px 0; }
+header p { color: var(--muted); margin: .5rem 0 0; }
+
+/* Tier sections */
+.gratitude-tier { margin: 28px 0 0; }
+.gratitude-tier h2 {
+  margin: 0 0 10px;
+  font-size: 1.35rem;
+  line-height: 1.2;
+}
+
+/* Name lists → tiles */
+.gratitude-tier ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 640px) {
+  .gratitude-tier ul { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 920px) {
+  .gratitude-tier ul { grid-template-columns: 1fr 1fr 1fr; }
+}
+
+/* Each name tile (simple, card-like) */
+.gratitude-tier li {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 14px;
+  min-height: 48px; /* keeps tap target comfy */
+  display: flex;
+  align-items: center;
+}
+
+/* Optional: highlight “top tier” tiles slightly */
+.gratitude-tier:first-of-type li {
+  border-color: #cbd5e1; /* slate-300 */
+  box-shadow: 0 4px 16px rgba(0,0,0,.04);
+}
+
+/* Patreon CTA section */
+.patreon { margin: 32px 0 0; }
+.patreon h2 { margin: 0 0 8px; }
+.patreon p { color: var(--muted); margin: 0 0 12px; }
+
+/* Button (works for <a class="button"> from your site-wide button.css too) */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  min-height: 44px;            /* a11y hit target */
+  padding: 10px 16px;
+  font: 600 16px/1.2 system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  color: #fff;
+  background: var(--accent);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color .15s ease, transform .06s ease;
+}
+.button:hover { background: var(--accent-dark); }
+.button:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.button:active { transform: translateY(1px); }
+
+/* Utility (only if you need “chips” later) */
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.chip  { background: var(--chip); padding: 2px 8px; border-radius: 999px; font-size: .8rem; }
+
+/* Respect users who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+  .button { transition: none; }
+}
 
