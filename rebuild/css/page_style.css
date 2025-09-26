@@ -1,0 +1,125 @@
+/* ===============================
+   Pedagogy of Humanity — Page Style
+   Shared layout for all content pages
+   =============================== */
+
+/* Page background + global text flow */
+body {
+  background-color: #d6dce1; /* soft gray-blue background */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  font-family: Garamond, serif;
+  color: #313647;
+}
+
+/* Main wrapper */
+.wrap {
+  width: 100%;
+  max-width: 1000px;
+  padding: 40px 16px;
+  margin: 100px auto 40px;
+}
+
+/* Hero/lede intro block */
+.content-wrapper {
+  max-width: 800px;
+  margin: 0 auto 28px;
+  background-color: rgba(44, 122, 123, 0.3); /* translucent teal tint */
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+}
+.content-wrapper h1 {
+  font-size: 34px;
+  margin: 0 0 20px;
+  font-family: Garamond, serif;
+}
+.content-wrapper p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 16px 0;
+}
+
+/* Section + cards */
+.section {
+  margin: 28px auto;
+  max-width: 1000px;
+  padding: 0 16px;
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,.08);
+  padding: 24px;
+  margin-bottom: 20px;
+}
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+  font-family: Garamond, serif;
+}
+
+/* Post cards inside sections */
+.post-card {
+  border: 1px solid #d6dce1;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 12px 0;
+  background: #fff;
+  text-align: left;
+}
+.post-card h3 {
+  margin-top: 0;
+  font-size: 1.25rem;
+}
+.post-card a {
+  text-decoration: none;
+  color: #2c7a7b;
+}
+.post-card a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  text-align: center;
+  color: #313647;
+  font-style: italic;
+  font-size: 18px;
+  padding-bottom: 96px;
+  margin-top: auto;
+}
+
+/* Responsive tweaks */
+@media (max-width: 640px) {
+  .wrap {
+    margin-top: 80px;
+    padding: 24px 14px;
+  }
+  .content-wrapper {
+    padding: 28px 18px;
+  }
+  .card {
+    padding: 18px;
+  }
+  .content-wrapper h1 {
+    font-size: 28px;
+    line-height: 1.25;
+  }
+  .card h2 {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+  .content-wrapper p,
+  .card p,
+  li {
+    font-size: 16px;
+    line-height: 1.55;
+  }
+}
