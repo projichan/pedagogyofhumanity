@@ -134,4 +134,32 @@ header {
   .site-nav ul { gap: 12px; }
   .site-nav a { padding: 10px 8px; }
 }
+/* === NAVBAR SUMMARY TEXT COLOR FIX === */
+.site-nav summary.nav-item {
+  color: #d6dce1 !important;    /* unify with link color */
+  font-size: 18px;              /* match your link size (use 18pt if you prefer) */
+  font-family: Garamond, serif; /* same font */
+  display: inline-flex;         /* align with icons */
+  align-items: center;
+  gap: 8px;                     /* spacing between icon + text */
+  cursor: pointer;
+  list-style: none;             /* removes disclosure triangle in some browsers */
+}
+
+/* Keep the color consistent on hover/focus/open */
+.site-nav summary.nav-item:hover,
+.site-nav summary.nav-item:focus,
+.site-nav summary.nav-item:active,
+.site-nav details[open] > summary.nav-item {
+  color: #d6dce1 !important;
+  background: transparent;
+}
+
+/* Hide the default disclosure marker across browsers */
+.site-nav summary.nav-item::-webkit-details-marker {
+  display: none;
+}
+.site-nav summary.nav-item::marker {
+  content: "";
+}
 
