@@ -162,4 +162,31 @@ header {
 .site-nav summary.nav-item::marker {
   content: "";
 }
+/* === NAV TEXT COLOR: force anchors + summaries + inner spans/icons === */
+.site-nav a,
+.site-nav a:visited,
+.site-nav details > summary.nav-item,
+.site-nav details[open] > summary.nav-item {
+  color: #d6dce1 !important;
+}
+
+.site-nav a span,
+.site-nav details > summary.nav-item span {
+  color: #d6dce1 !important;   /* hit the inner label explicitly */
+}
+
+/* If your icons are inline SVG, make their strokes/fills match too */
+.site-nav svg { fill: #d6dce1 !important; stroke: #d6dce1 !important; }
+
+/* Keep the same color on interaction */
+.site-nav a:hover,
+.site-nav a:focus,
+.site-nav a:active,
+.site-nav details > summary.nav-item:hover,
+.site-nav details > summary.nav-item:focus {
+  color: #d6dce1 !important;
+}
+
+/* If you’re using the custom caret on summary, match its color */
+.site-nav details > summary.nav-item::before { color: currentColor !important; }
 
