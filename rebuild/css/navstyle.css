@@ -83,3 +83,55 @@ header {
     transition: none;
   }
 }
+
+/* === NAV PATCH: icon caps + list normalization + alignment === */
+
+/* If your nav is a <ul>, remove bullets/spacing and align items */
+.site-nav ul { 
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
+  display: flex; 
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.site-nav li { margin: 0; padding: 0; }
+
+/* Make each link an inline-flex row so icon + text sit on one line */
+.site-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;               /* space between icon and text */
+  padding: 8px 10px;      /* nicer tap target, still compact */
+  border-radius: 8px;
+}
+
+/* ICONS: stop the chaos (works for <img> and inline <svg>) */
+.site-nav img,
+.site-nav .icon,
+.site-nav svg {
+  width: 22px;
+  height: 22px;
+  max-width: 22px !important;
+  max-height: 22px !important;
+  flex: 0 0 22px;
+  display: inline-block;
+  vertical-align: middle;
+  object-fit: contain;
+}
+
+/* Some inline SVGs set width/height attributes (e.g., 512px). Clamp them. */
+.site-nav svg[width]  { width: 22px !important; }
+.site-nav svg[height] { height: 22px !important; }
+
+/* Hover/focus stays consistent with your palette */
+.site-nav a:hover { background: rgba(255,255,255,.08); }
+.site-nav a:focus-visible { outline: 3px solid #ffffff; outline-offset: 3px; }
+
+/* Mobile: keep wrapping gracefully */
+@media (max-width: 700px){
+  .site-nav ul { gap: 12px; }
+  .site-nav a { padding: 10px 8px; }
+}
+
