@@ -8,3 +8,44 @@
   <a href="about_brittany.html">About</a>
   <a href="contact.html">Contact</a>
 </nav>
+
+UPDATED 9/26 FOR A11Y/WCAG
+NEW STRUCTURE:
+HOME = INDEX.HTML
+THE FRAMEWORK =LEARNMORE.HTML
+EXPLORE HELP = SERVICES.HTML
+PURCHASE RESOURCES =PEDAGOGYPRODUCTS.COM
+ABOUT = ADD NEW ABOUT PAGE
+CONTACT = CONTACT
+
+<nav class="site-nav" aria-label="Primary">
+<a href="index.html">
+  <img src="assets/icons/home.svg" alt="" aria-hidden="true" class="icon">
+  <span>Home</span>
+</a>
+
+  <a href="learnmore.html">
+  <img src="assets/icons/framework.svg" alt="" aria-hidden="true" class="icon">
+<span>Learn More</span>
+</a>
+
+  <a href="services.html">
+  <img src="assets/icons/explore.svg" alt="" aria-hidden="true" class="icon">
+<span>Explore Help</span>
+</a>
+
+  <a href="pedagogyproducts.com">
+  <img src="assets/icons/purchase.svg" alt="" aria-hidden="true" class="icon">
+<span>Purchase Resources</span>
+</a>
+
+  <a href="about.html">
+  <img src="assets/icons/about.svg" alt="" aria-hidden="true" class="icon">
+<span>About</span>
+</a>
+
+  <a href="contact.html">
+  <img src="assets/icons/contact.svg" alt="" aria-hidden="true" class="icon">
+<span>Contact</span>
+</a>
+</nav>
