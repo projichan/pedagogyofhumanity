@@ -190,3 +190,111 @@ header {
 /* If you’re using the custom caret on summary, match its color */
 .site-nav details > summary.nav-item::before { color: currentColor !important; }
 
+/* === MOBILE HAMBURGER NAV (CSS-only) === */
+@media (max-width: 700px) {
+  /* Show the toggle, hide the full nav by default */
+  .hamburger {
+    display: block;
+    position: sticky;
+    top: 0;
+    z-index: 1100;
+    background: #2c7a7b;
+    padding: 10px 12px;
+    border-bottom: 1px solid rgba(255,255,255,.15);
+  }
+  .hamburger-btn {
+    list-style: none;           /* hide default marker */
+    display: flex; align-items: center; gap: 10px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    color: #d6dce1;             /* label color */
+    font-family: Garamond, serif;
+    font-size: 18px;
+  }
+  .hamburger-btn::-webkit-details-marker { display: none; }
+  .hamburger-btn::marker { content: ""; }
+
+  /* Hamburger icon (3 bars) */
+  .hamburger-box { position: relative; width: 24px; height: 16px; }
+  .hamburger-inner,
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    content: "";
+    position: absolute; left: 0;
+    width: 24px; height: 2px; border-radius: 2px;
+    background: #d6dce1;
+    transition: transform .2s ease, opacity .2s ease;
+  }
+  .hamburger-inner { top: 7px; }
+  .hamburger-inner::before { top: -6px; }
+  .hamburger-inner::after  { top: 6px; }
+
+  /* Turn into an “X” when open */
+  .hamburger[open] .hamburger-inner { transform: rotate(45deg); }
+  .hamburger[open] .hamburger-inner::before { opacity: 0; }
+  .hamburger[open] .hamburger-inner::after  { transform: rotate(-90deg); top: 0; }
+
+  /* Hide the full nav until opened */
+  .site-nav { display: none; }
+  .hamburger[open] + .site-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px 8px;
+    background: #2c7a7b;       /* match bar */
+    border-top: 1px solid rgba(255,255,255,.15);
+  }
+
+  /* Make each top-level item a comfy row */
+  .site-nav > .nav-item,
+  .site-nav > .nav-group > summary.nav-item {
+    display: flex; align-items: center; gap: 10px;
+    padding: 12px 12px;
+    border-radius: 10px;
+    background: rgba(255,255,255,.08);
+    font-size: 18px; line-height: 1.3;
+  }
+
+  /* Submenus: simple inline reveal when the details is open */
+  .site-nav .submenu {
+    position: static;
+    display: none;
+    margin: 6px 0 2px 38px;     /* indent under its parent */
+    padding: 6px 8px;
+    background: transparent; border: 0;
+  }
+  .site-nav .nav-group[open] > .submenu { display: block; }
+
+  /* Tap targets inside submenu */
+  .site-nav .submenu a {
+    display: block; padding: 10px 8px; border-radius: 8px;
+  }
+  .site-nav .submenu a:hover { background: rgba(255,255,255,.08); }
+
+  /* Caret for dropdown parents (summary) */
+  .site-nav summary.nav-item::-webkit-details-marker { display: none; }
+  .site-nav summary.nav-item::marker { content: ""; }
+  .site-nav summary.nav-item::after {
+    content: "▸"; margin-left: auto; transform: rotate(0deg);
+    transition: transform .18s ease; color: currentColor;
+  }
+  .site-nav .nav-group[open] > summary.nav-item::after { transform: rotate(90deg); }
+
+  /* Prevent sideways scroll on tiny screens */
+  .site-nav { overflow-x: hidden; }
+}
+
+/* Desktop: hide hamburger, show normal nav */
+@media (min-width: 701px) {
+  .hamburger { display: none; }
+  .site-nav { display: flex; } /* your existing desktop layout */
+}
+
+/* Focus-visible for accessibility */
+.hamburger-btn:focus-visible,
+.site-nav a:focus-visible,
+.site-nav summary.nav-item:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+}
+
