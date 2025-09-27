@@ -33,6 +33,38 @@
     .jump-list a:hover { text-decoration:underline; }
     .service-meta { margin: 8px 0 0 18px; }
     .service-meta li { margin: 4px 0; }
+   /* CTA button */
+    .cta-wrap {
+      text-align: center;
+      margin: 40px 0 20px;
+    }
+    .cta-button {
+      display: inline-block;
+      background: #2c7a7b;   /* brand teal */
+      color: #fff;
+      font-family: Garamond, serif;
+      font-size: 20px;
+      padding: 14px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background .3s ease, transform .2s ease;
+    }
+    .cta-button:hover {
+      background: #246568;   /* darker teal on hover */
+      transform: translateY(-2px);
+    }
+
+    @media (max-width:640px) {
+      h1 { font-size:28px; }
+      .sub { font-size:16px; }
+      .cta-button {
+        display:block;
+        width:100%;
+        max-width:300px;
+        margin:0 auto;
+      }
+    }
+  
   </style>
 </head>
 
@@ -197,13 +229,10 @@
       </div>
     </section>
 
-    <section class="section">
-      <div class="card">
-        <h2>Ready to get started?</h2>
-        <p>Schedule your free consult today.</p>
-        <p><a class="button" href="booking.html">Book a consult</a></p>
-      </div>
-    </section>
+    <!-- CTA Button -->
+    <div class="cta-wrap">
+      <a class="cta-button" href="booking.html">Request Help Today</a>
+    </div>
   </main>
 
   <footer class="site-footer">
