@@ -85,6 +85,39 @@ body {
   text-decoration: underline;
 }
 
+/* Post cards inside sections */
+.post-card {
+  border: 1px solid #d6dce1;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 12px 0;
+  background: #fff;
+  text-align: left;
+}
+.post-card h3 {
+  margin-top: 0;
+  font-size: 1.25rem;
+}
+.post-card a {
+  text-decoration: none;
+  color: #2c7a7b;
+}
+.post-card a:hover {
+  text-decoration: underline;
+}
+
+/* Breadcrumb (used in posts for back link) */
+.breadcrumb {
+  margin: 8px 0 12px;
+}
+.breadcrumb a {
+  text-decoration: none;
+  color: #2c7a7b;
+}
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
 /* Footer */
 footer {
   width: 100%;
