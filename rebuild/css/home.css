@@ -57,3 +57,58 @@
   /* Optional: slightly smaller footer */
   footer{ font-size: 16px; padding: 12px; }
 }
+/* Tagline Card */
+.tagline-card{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:48px 16px;
+  background:#f7fafc; /* subtle contrast behind the card */
+}
+.tagline-card__inner{
+  width:100%;
+  max-width:900px;
+  background:#fff;
+  border-radius:16px;
+  box-shadow:0 6px 18px rgba(0,0,0,.08);
+  padding:32px 24px;
+  text-align:center;
+}
+.tagline-card__title{
+  font-family: "EB Garamond", Garamond, serif;
+  font-size: clamp(1.25rem, 2.5vw + .5rem, 1.875rem);
+  line-height:1.4;
+  margin:0 0 20px;
+  color:#014d4e; /* brand deep teal */
+}
+.tagline-card__cta{
+  display:inline-block;
+  padding:12px 22px;
+  border-radius:10px;
+  background:#2c7a7b;   /* brand accent teal */
+  color:#fff;
+  text-decoration:none;
+  font-family:"Lexend Semi Bold", "Lexend", system-ui, sans-serif;
+  font-size:1rem;
+  line-height:1;
+  transition: transform .04s ease, background .25s ease;
+}
+.tagline-card__cta:hover,
+.tagline-card__cta:focus{
+  background:#014d4e;
+}
+.tagline-card__cta:active{
+  transform: translateY(1px);
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .tagline-card__cta{ transition:none; }
+}
+
+/* Tighten spacing on very small screens */
+@media (max-width:420px){
+  .tagline-card{ padding:36px 12px; }
+  .tagline-card__inner{ padding:24px 16px; }
+}
