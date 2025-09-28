@@ -10,6 +10,39 @@
   <link rel="stylesheet" href="rebuild/css/navstyle.css">
   <link rel="stylesheet" href="rebuild/css/button.css">
   <link rel="stylesheet" href="rebuild/css/footer.css">
+    <link rel="stylesheet" href="rebuild/css/page_style.css">
+
+  <style> /* CTA button */
+    .cta-wrap {
+      text-align: center;
+      margin: 40px 0 20px;
+    }
+    .cta-button {
+      display: inline-block;
+      background: #2c7a7b;   /* brand teal */
+      color: #fff;
+      font-family: Garamond, serif;
+      font-size: 20px;
+      padding: 14px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background .3s ease, transform .2s ease;
+    }
+    .cta-button:hover {
+      background: #246568;   /* darker teal on hover */
+      transform: translateY(-2px);
+    }
+
+    @media (max-width:640px) {
+      h1 { font-size:28px; }
+      .sub { font-size:16px; }
+      .cta-button {
+        display:block;
+        width:100%;
+        max-width:300px;
+        margin:0 auto;
+      }
+    }</style>
 
   <!-- Page-specific -->
   <link rel="stylesheet" href="rebuild/css/home.css">
