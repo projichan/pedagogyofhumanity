@@ -1,0 +1,12 @@
+<!-- === Patreon CTA Snippet v1.0 | Last updated: 2025-10-09 === -->
+
+<!-- Include this in the <head> or CSS section -->
+<link rel="stylesheet" href="/rebuild/css/button.css">
+
+<!-- Add this snippet at the bottom of the post -->
+<p style="text-align:center;margin-top:10px;font-style:italic;">
+  Want to read the full essay?
+</p>
+<p style="text-align:center;margin-top:20px;">
+  <a class="button" href="https://www.patreon.com/cw/PedagogyofHumanity">Support on Patreon</a>
+</p>
