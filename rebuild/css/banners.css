@@ -7,7 +7,7 @@
   font-size: clamp(1rem, 2vw, 1.75rem);
   text-align: center;
   padding: 1.25rem 2rem;
-  border-radius: 0px; /* rectangular ends */
+  border-radius: 8px; /* rectangular ends */
   margin: 1.5rem auto;
   width: fit-content;
   max-width: 90%;
