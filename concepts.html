@@ -80,81 +80,82 @@
 </head>
 <body>
 
- <header>
-    <!-- MOBILE-ONLY HAMBURGER TOGGLE (CSS-only; no JS) -->
-    <details class="hamburger" aria-label="Main menu">
-      <summary class="hamburger-btn">
-        <span class="hamburger-box" aria-hidden="true">
-          <span class="hamburger-inner"></span>
-        </span>
-        <span class="hamburger-text">Menu</span>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header>
+  <!-- MOBILE HAMBURGER (CSS-only) -->
+  <details class="hamburger">
+    <summary class="hamburger-btn" aria-label="Open main menu">
+      <span class="hamburger-box" aria-hidden="true">
+        <span class="hamburger-inner"></span>
+      </span>
+      <span class="hamburger-text">Menu</span>
+    </summary>
+  </details>
+
+  <nav class="site-nav" aria-label="Primary">
+    <!-- Home -->
+    <a href="index.html" class="nav-item" aria-current="page">
+      <img src="assets/icons/home.svg" alt="" aria-hidden="true" class="icon">
+      <span>Home</span>
+    </a>
+
+    <!-- Our Approach -->
+    <details class="nav-group">
+      <summary class="nav-item" id="approach-label">
+        <img src="assets/icons/framework.svg" alt="" aria-hidden="true" class="icon">
+        <span>Our Approach</span>
       </summary>
-    </details>  <nav class="site-nav" aria-label="Primary">
+      <ul class="submenu" aria-labelledby="approach-label">
+        <li><a href="learnmore.html">The Pedagogy of Humanity</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="posts.html">Posts</a></li>
+      </ul>
+    </details>
 
-  <!-- Home -->
-  <a href="index.html" class="nav-item">
-    <img src="assets/icons/home.svg" alt="" aria-hidden="true" class="icon">
-    <span>Home</span>
-  </a>
+    <!-- Work With Us -->
+    <details class="nav-group">
+      <summary class="nav-item" id="work-label">
+        <img src="assets/icons/explore.svg" alt="" aria-hidden="true" class="icon">
+        <span>Work With Us</span>
+      </summary>
+      <ul class="submenu" aria-labelledby="work-label">
+        <li><a href="services.html">Get Started</a></li>
+        <li><a href="sample_work.html">Sample Works</a></li>
+        <li><a href="families.html">For Families</a></li>
+        <li><a href="organizations.html">For Organizations</a></li>
+        <li><a href="booking.html">Book a free 15-minute consultation</a></li>
+      </ul>
+    </details>
 
-  <!-- The Framework -->
-  <details class="nav-group">
-    <summary class="nav-item" aria-haspopup="menu">
-      <img src="assets/icons/framework.svg" alt="" aria-hidden="true" class="icon">
-      <span>The Framework</span>
-    </summary>
-    <div class="submenu" role="menu" aria-label="The Framework">
-      <a role="menuitem" href="learnmore.html">The Pedagogy of Humanity</a>
-      <a role="menuitem" href="research.html">Research</a>
-      <a role="menuitem" href="posts.html">Posts</a>
-      <a role="menuitem" href="concepts.html">Concepts in Development</a>
-    </div>
-  </details>
+    <!-- Shop -->
+    <a href="https://pedagogyproducts.com" class="nav-item">
+      <img src="assets/icons/purchase.svg" alt="" aria-hidden="true" class="icon">
+      <span>Shop</span>
+    </a>
 
-  <!-- Explore Help -->
-  <details class="nav-group">
-    <summary class="nav-item" aria-haspopup="menu">
-      <img src="assets/icons/explore.svg" alt="" aria-hidden="true" class="icon">
-      <span>Explore Help</span>
-    </summary>
-    <div class="submenu" role="menu" aria-label="Explore Help">
-      <a role="menuitem" href="services.html">Overview</a>
-        <a role="menuitem" href="sample_work.html">Sample Works</a>
-      <a role="menuitem" href="families.html">Services for Families</a>
-      <a role="menuitem" href="organizations.html">Services for Organizations</a>
-      <a role="menuitem" href="booking.html">Booking</a>
-    </div>
-  </details>
+    <!-- About -->
+    <details class="nav-group">
+      <summary class="nav-item" id="about-label">
+        <img src="assets/icons/about.svg" alt="" aria-hidden="true" class="icon">
+        <span>About</span>
+      </summary>
+      <ul class="submenu" aria-labelledby="about-label">
+        <li><a href="about_brittany.html">About Brittany</a></li>
+        <li><a href="llc.html">About Pedagogy of Humanity, LLC</a></li>
+        <li><a href="gratitude.html">Wall of Gratitude</a></li>
+      </ul>
+    </details>
 
-  <!-- Purchase Resources -->
-  <a href="https://pedagogyproducts.com" class="nav-item">
-    <img src="assets/icons/purchase.svg" alt="" aria-hidden="true" class="icon">
-    <span>Purchase Resources</span>
-  </a>
+    <!-- Contact -->
+    <a href="contact.html" class="nav-item">
+      <img src="assets/icons/contact.svg" alt="" aria-hidden="true" class="icon">
+      <span>Contact</span>
+    </a>
+  </nav>
+</header>
 
-  <!-- About -->
-  <details class="nav-group">
-    <summary class="nav-item" aria-haspopup="menu">
-      <img src="assets/icons/about.svg" alt="" aria-hidden="true" class="icon">
-      <span>About</span>
-    </summary>
-    <div class="submenu" role="menu" aria-label="About">
-      <a role="menuitem" href="gratitude.html">Wall of Gratitude</a>
-      <a role="menuitem" href="about_brittany.html">About Brittany</a>
-      <a role="menuitem" href="llc.html">About Pedagogy of Humanity, LLC</a>   
-      <a role="menuitem" href="terms_of_service.html">Terms of Service</a>
-      <a role="menuitem" href="privacypolicy.html">Privacy Policy</a>
-    </div>
-  </details>
-
-  <!-- Contact -->
-  <a href="contact.html" class="nav-item">
-    <img src="assets/icons/contact.svg" alt="" aria-hidden="true" class="icon">
-    <span>Contact</span>
-  </a>
-
-</nav>
-  </header>
+<main id="main">
 
   <main class="wrap">
     <h1>Concepts in Development</h1>
@@ -204,6 +205,8 @@
       </figure>
     </section>
   </main>
+    <!-- page content -->
+</main>
 
   <footer>
     © 2025 Brittany L. Stratton. Pedagogy of Humanity ™. All Rights Reserved.
