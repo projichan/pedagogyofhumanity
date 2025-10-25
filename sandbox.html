@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pedagogy of Humanity</title>
+
+  <!-- Global styles -->
+  <link rel="stylesheet" href="rebuild/css/base.css">
+  <link rel="stylesheet" href="rebuild/css/navstyle.css">
+  <link rel="stylesheet" href="rebuild/css/button.css">
+  <link rel="stylesheet" href="rebuild/css/footer.css">
+  <link rel="stylesheet" href="rebuild/css/banners.css">
+    <link rel="stylesheet" href="rebuild/css/page_style.css">
+
+  <style> /* CTA button */
+    .cta-wrap {
+      text-align: center;
+      margin: 40px 0 20px;
+    }
+    .cta-button {
+      display: inline-block;
+      background: #2c7a7b;   /* brand teal */
+      color: #fff;
+      font-family: Garamond, serif;
+      font-size: 20px;
+      padding: 14px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background .3s ease, transform .2s ease;
+    }
+    .cta-button:hover {
+      background: #246568;   /* darker teal on hover */
+      transform: translateY(-2px);
+    }
+
+    @media (max-width:640px) {
+      h1 { font-size:28px; }
+      .sub { font-size:16px; }
+      .cta-button {
+        display:block;
+        width:100%;
+        max-width:300px;
+        margin:0 auto;
+      }
+    }</style>
+
+  <!-- Page-specific -->
+  <link rel="stylesheet" href="rebuild/css/home.css">
+</head>
+<body>
+  <header>
+    <!-- MOBILE-ONLY HAMBURGER TOGGLE (CSS-only; no JS) -->
+    <details class="hamburger" aria-label="Main menu">
+      <summary class="hamburger-btn">
+        <span class="hamburger-box" aria-hidden="true">
+          <span class="hamburger-inner"></span>
+        </span>
+        <span class="hamburger-text">Menu</span>
+      </summary>
+    </details>
+
+    <!-- SINGLE, REAL NAV (must be a sibling after the hamburger) -->
+    <nav class="site-nav" aria-label="Primary">
+      <!-- Home -->
+      <a href="index.html" class="nav-item" aria-current="page">
+        <img src="assets/icons/home.svg" alt="" aria-hidden="true" class="icon">
+        <span>Home</span>
+      </a>
+
+      <!-- The Framework -->
+      <details class="nav-group">
+        <summary class="nav-item" aria-haspopup="menu">
+          <img src="assets/icons/framework.svg" alt="" aria-hidden="true" class="icon">
+          <span>The Framework</span>
+        </summary>
+        <div class="submenu" role="menu" aria-label="The Framework">
+          <a role="menuitem" href="learnmore.html">The Pedagogy of Humanity</a>
+          <a role="menuitem" href="research.html">Research</a>
+          <a role="menuitem" href="posts.html">Posts</a>
+        </div>
+      </details>
+
+      <!-- Explore Help -->
+      <details class="nav-group">
+        <summary class="nav-item" aria-haspopup="menu">
+          <img src="assets/icons/explore.svg" alt="" aria-hidden="true" class="icon">
+          <span>Explore Help</span>
+        </summary>
+        <div class="submenu" role="menu" aria-label="Explore Help">
+          <a role="menuitem" href="services.html">Overview</a>
+           <a role="menuitem" href="sample_work.html">Sample Works</a>
+          <a role="menuitem" href="families.html">Services for Families</a>
+          <a role="menuitem" href="organizations.html">Services for Organizations</a>
+          <a role="menuitem" href="booking.html">Booking</a>
+        </div>
+      </details>
+
+      <!-- Purchase Resources -->
+      <a href="https://pedagogyproducts.com" class="nav-item">
+        <img src="assets/icons/purchase.svg" alt="" aria-hidden="true" class="icon">
+        <span>Purchase Resources</span>
+      </a>
+
+      <!-- About -->
+      <details class="nav-group">
+        <summary class="nav-item" aria-haspopup="menu">
+          <img src="assets/icons/about.svg" alt="" aria-hidden="true" class="icon">
+          <span>About</span>
+        </summary>
+        <div class="submenu" role="menu" aria-label="About">
+          <a role="menuitem" href="gratitude.html">Wall of Gratitude</a>
+          <a role="menuitem" href="about_brittany.html">About Brittany</a>
+          <a role="menuitem" href="llc.html">About Pedagogy of Humanity, LLC</a>
+          <a role="menuitem" href="terms_of_service.html">Terms of Service</a>
+          <a role="menuitem" href="privacypolicy.html">Privacy Policy</a>
+        </div>
+      </details>
+
+      <!-- Contact -->
+      <a href="contact.html" class="nav-item">
+        <img src="assets/icons/contact.svg" alt="" aria-hidden="true" class="icon">
+        <span>Contact</span>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Main Banner -->
+    <div class="main-banner">
+      <img src="assets/poh-text-banner-v2.png" alt="Pedagogy of Humanity" class="main-img" />
+    </div>
+
+    <!-- Tagline Card -->
+<section class="tagline-card" role="region" aria-labelledby="tagline-heading">
+  <div class="tagline-card__inner">
+    <h2 id="tagline-heading" class="tagline-card__title">
+      The <em>only</em> framework building resilience through trauma-responsive practice — 
+      from home, to classroom, to campus.<br>
+      <span class="tagline-card__subtitle">
+        Start a conversation about how the Pedagogy of Humanity can help your family, program, or organization thrive today.
+      </span>
+    </h2>
+  </div>
+</section>
+  
+      <!-- CTA Button -->
+<section>
+    <div class="cta-wrap">
+      <a class="cta-button" href="booking.html">Book a free 15-minute consultation</a>
+  </div>
+</section>
+    
+    <!-- Secondary Banners -->
+   <div class="belief-banner">In all things, teach</div>
+<div class="belief-banner">No act of kindness done in love is ever wasted</div>
+<div class="belief-banner">Safety is the highest form of love</div>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Brittany L. Stratton. Pedagogy of Humanity ™. All Rights Reserved.</p>
+    <p>
+      <a href="terms_of_service.html">Terms of Service</a> |
+      <a href="privacypolicy.html">Privacy Policy</a> |
+      <a href="sitemap.xml">Site Map</a>
+    </p>
+  </footer>
+</body>
+</html>
