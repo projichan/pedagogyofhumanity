@@ -45,6 +45,13 @@ body {
   line-height: 1.6;
   margin: 16px 0;
 }
+.content-wrapper ul {
+  text-align: left;
+  list-style-position: inside;  /* optional: moves bullets inside the box */
+  margin: 0 auto;
+  padding-left: 1.5rem;         /* tweak spacing if needed */
+}
+
 
 /* ---------- SECTION & CARDS ---------- */
 .section {
