@@ -29,7 +29,7 @@ body {
   max-width: 800px;
   margin: 0 auto 28px;
   background-color: rgba(44, 122, 123, 0.3); /* translucent teal tint */
-  padding: 20px;
+  padding: 10px;
   border-radius: 12px;
   text-align: center;
 }
