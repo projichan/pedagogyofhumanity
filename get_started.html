@@ -3,129 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Services • Pedagogy of Humanity</title>
-  <meta name="description" content="Explore services offered by Brittany L. Stratton through the Pedagogy of Humanity — including free consultations, advocacy, family supports, and organizational services" />
+  <title>Get Started • Pedagogy of Humanity</title>
+  <meta name="description" content="Get Started" />
 
   <!-- Global styles -->
   <link rel="stylesheet" href="rebuild/css/base.css">
   <link rel="stylesheet" href="rebuild/css/navstyle.css">
   <link rel="stylesheet" href="rebuild/css/lightbox.css">
+  <link rel="stylesheet" href="rebuild/css/page_style.css">
+  <link rel="stylesheet" href="rebuild/css/button.css">
+  <link rel="stylesheet" href="rebuild/css/footer.css">
 
-  <!-- Page-specific -->
-  <style>
-    body {
-      background-color: #d6dce1;
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .wrap { width:100%; max-width:1200px; padding:40px 16px; margin:auto; }
-    h1 {
-      text-align:center;
-      font-family:Garamond, serif;
-      font-size:36px;
-      margin:16px 0 8px;
-      color:#313647;
-    }
-    .sub {
-      text-align:center;
-      font-style:italic;
-      color:#5b6277;
-      margin:0 0 28px;
-      font-family:Garamond, serif;
-    }
-
-    /* Grid of services */
-    .grid {
-      display:grid;
-      grid-template-columns:repeat(auto-fit, minmax(240px,1fr));
-      gap:20px;
-    }
-    .card {
-      background:#fff;
-      border-radius:12px;
-      box-shadow:0 6px 16px rgba(0,0,0,.08);
-      overflow:hidden;
-      transition:transform .18s ease, box-shadow .18s ease;
-      text-align:center;
-    }
-    .card:hover {
-      transform:translateY(-2px);
-      box-shadow:0 10px 24px rgba(0,0,0,.12);
-    }
-    .thumb {
-      width:100%;
-      aspect-ratio:4/3;
-      overflow:hidden;
-      background:#e9edf0;
-    }
-    .thumb img {
-      width:100%;
-      height:100%;
-      object-fit:contain;
-      display:block;
-    }
-    .card h3 {
-      margin:12px 0;
-      font-family:Garamond, serif;
-      font-size:20px;
-      color:#313647;
-    }
-    .card a {
-      display:inline-block;
-      margin-bottom:16px;
-      font-size:16px;
-      color:#2c7a7b;
-      text-decoration:underline;
-    }
-
-    /* CTA button */
-    .cta-wrap {
-      text-align: center;
-      margin: 40px 0 20px;
-    }
-    .cta-button {
-      display: inline-block;
-      background: #2c7a7b;   /* brand teal */
-      color: #fff;
-      font-family: Garamond, serif;
-      font-size: 20px;
-      padding: 14px 32px;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background .3s ease, transform .2s ease;
-    }
-    .cta-button:hover {
-      background: #246568;   /* darker teal on hover */
-      transform: translateY(-2px);
-    }
-
-    @media (max-width:640px) {
-      h1 { font-size:28px; }
-      .sub { font-size:16px; }
-      .cta-button {
-        display:block;
-        width:100%;
-        max-width:300px;
-        margin:0 auto;
-      }
-    }
-
-    footer {
-      width: 100%;
-      text-align: center;
-      color: #313647;
-      font-family: Garamond, serif;
-      font-style: italic;
-      font-size: 18px;
-      padding-bottom: 96px;
-      margin-top: auto;
-    }
-  </style>
+ 
 </head>
 <body>
    <header>
@@ -167,7 +56,7 @@
       <span>Work With Us</span>
     </summary>
     <div class="submenu" role="menu" aria-label="Work With Us">
-      <a role="menuitem" href="services.html">Get Started</a>
+      <a role="menuitem" href="get_started.html">Get Started</a>
         <a role="menuitem" href="sample_work.html">Sample Works</a>
       <a role="menuitem" href="families.html">For Families</a>
       <a role="menuitem" href="organizations.html">For Organizations</a>
@@ -204,100 +93,51 @@
    </header>
   
     
-  <main class="wrap">
-    <h1>Services</h1>
-    <p class="sub">Explore offerings and click to view details in PDF format.</p>
+  <main id="main" class="wrap">
+    <h1>Let's Get Started</h1>
+    <p class="sub">You’re ready to build something safer, stronger, and more human — and I can help.</p>
+
+        <div class="cta-wrap">
+      <a class="cta-button" href="booking.html">Schedule a Free 15-Minute Conversation</a>
+    </div>
     
     <div class="card">
   <p>
-    Pedagogy of Humanity, LLC is the only framework that works across the community—homes, classrooms, and organizations—to provide consultations and education on trauma-responsive practice to support students, families, and employees.
+   Whether you’re an educator, administrator, or parent, getting started is simple. Choose the type of support you’re looking for below, and I’ll help you create a plan that fits your goals.
   </p>
 </div>
 
-    <section class="grid">
-      <!-- Card 1 -->
-      <figure class="card">
-        <div class="thumb">
-          <a href="#lb-15min"><img src="assets/15minpic.png" alt="Preview of Free 15 Minute Consultation PDF" /></a>
-        </div>
-        <h3>FREE 15 Minute Consultation</h3>
-        <a href="#lb-15min">View PDF</a>
-      </figure>
+   <section class="cards-section">
+  <h2>Choose Your Starting Point</h2>
+  <div class="card-container">
 
-      <!-- Card 2 -->
-      <figure class="card">
-        <div class="thumb">
-          <a href="#lb-all"><img src="assets/one_page_servicepic.png" alt="Preview of All Services PDF" /></a>
-        </div>
-        <h3>All Services</h3>
-        <a href="#lb-all">View PDF</a>
-      </figure>
+    <div class="card">
+      <h3>Organizational Consulting</h3>
+      <p>Transform systems, policies, and professional culture through trauma-responsive design.</p>
+      <a href="contact.html" class="card-btn">Request a Quote</a>
+    </div>
 
-      <!-- Card 3 -->
-      <figure class="card">
-        <div class="thumb">
-          <a href="#lb-family"><img src="assets/adv_servicepic.png" alt="Preview of For Families PDF" /></a>
-        </div>
-        <h3>For Families</h3>
-        <a href="#lb-family">View PDF</a>
-      </figure>
+    <div class="card">
+      <h3>Professional Development</h3>
+      <p>Bring trauma-responsive, relational learning to your educators through workshops, keynotes, or virtual training.</p>
+      <a href="contact.html" class="card-btn">Schedule a Session</a>
+    </div>
 
-      <!-- Card 4 -->
-      <figure class="card">
-        <div class="thumb">
-          <a href="#lb-org"><img src="assets/org_servicepic.png" alt="Preview of For Organizations PDF" /></a>
-        </div>
-        <h3>For Organizations</h3>
-        <a href="#lb-org">View PDF</a>
-      </figure>
-    </section>
+    <div class="card">
+      <h3>Family & Educator Support</h3>
+      <p>One-on-one or small-group coaching to strengthen home-school partnerships and family resilience.</p>
+      <a href="contact.html" class="card-btn">Book a Consult</a>
+    </div>
+
+  </div>
+</section>
 
     <!-- CTA Button -->
     <div class="cta-wrap">
-      <a class="cta-button" href="booking.html">Request Help Today</a>
+      <a class="cta-button" href="booking.html">Get started with a <strong>FREE</strong> 15-minute conversation</a>
     </div>
   </main>
 
-  <!-- Lightboxes -->
-  <div id="lb-15min" class="lightbox" role="dialog" aria-modal="true" aria-label="FREE 15 Minute Consultation PDF">
-    <a href="#" class="backdrop" aria-label="Close"></a>
-    <div class="lightbox-inner">
-      <a href="#" class="close" aria-label="Close">✕</a>
-      <div class="lb-media">
-        <iframe src="assets/15min.pdf#view=FitH" title="FREE 15 Minute Consultation PDF"></iframe>
-      </div>
-    </div>
-  </div>
-
-  <div id="lb-all" class="lightbox" role="dialog" aria-modal="true" aria-label="All Services PDF">
-    <a href="#" class="backdrop" aria-label="Close"></a>
-    <div class="lightbox-inner">
-      <a href="#" class="close" aria-label="Close">✕</a>
-      <div class="lb-media">
-        <iframe src="assets/one_page_services.pdf#view=FitH" title="All Services PDF"></iframe>
-      </div>
-    </div>
-  </div>
-
-  <div id="lb-family" class="lightbox" role="dialog" aria-modal="true" aria-label="For Families PDF">
-    <a href="#" class="backdrop" aria-label="Close"></a>
-    <div class="lightbox-inner">
-      <a href="#" class="close" aria-label="Close">✕</a>
-      <div class="lb-media">
-        <iframe src="assets/adv_service.pdf#view=FitH" title="For Families PDF"></iframe>
-      </div>
-    </div>
-  </div>
-
-  <div id="lb-org" class="lightbox" role="dialog" aria-modal="true" aria-label="For Organizations PDF">
-    <a href="#" class="backdrop" aria-label="Close"></a>
-    <div class="lightbox-inner">
-      <a href="#" class="close" aria-label="Close">✕</a>
-      <div class="lb-media">
-        <iframe src="assets/org_service.pdf#view=FitH" title="For Organizations PDF"></iframe>
-      </div>
-    </div>
-  </div>
 
   <footer class="site-footer">
     <p>© 2025 Brittany L. Stratton. Pedagogy of Humanity ™. All Rights Reserved.</p>
