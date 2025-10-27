@@ -105,72 +105,48 @@
   text-decoration: underline;
 }
 
-/* ============================================================
-   Dots navigation (anchor links)
-   ============================================================ */
-
+/* --- Replace dots with simple arrows --- */
 .carousel-dots {
   display: flex;
   justify-content: center;
-  gap: var(--gap-sm);
-  padding-bottom: 6px;
+  gap: 40px;
+  padding: 12px 0;
 }
 
 .carousel-dots a {
-  width: 10px;
-  height: 10px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
-  background: #b7c0c8;
-  display: inline-block;
-  text-indent: -9999px; /* hide numbers but keep accessible name */
-  border: 0;
-}
-
-/* focus state for keyboard users */
-.carousel-dots a:focus-visible {
-  outline: 3px solid var(--brand-teal);
-  outline-offset: 2px;
-  border-radius: 999px;
-}
-
-/* If you set aria-current="true" on the active dot in markup */
-.carousel-dots a[aria-current="true"] {
   background: var(--brand-teal);
-}
-
-/* ============================================================
-   Optional: minimal arrow links (still no JS)
-   (Place your own arrow container in HTML if desired)
-   ============================================================ */
-
-.carousel-arrows {
+  color: white;
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 14px;
-  margin-top: -4px;
-}
-
-.carousel-arrows a {
-  font-family: var(--font-serif);
-  color: var(--brand-teal);
+  justify-content: center;
+  font-weight: bold;
+  font-size: 16px;
   text-decoration: none;
-  padding: 6px 10px;
-  border-radius: 8px;
-  background: rgba(44, 122, 123, 0.08);
-  transition: background .2s ease, color .2s ease, transform .2s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: all 0.25s ease;
 }
 
-.carousel-arrows a:hover {
-  background: rgba(44, 122, 123, 0.14);
-  color: var(--brand-teal-dark);
-  transform: translateY(-1px);
+/* Add arrows using pseudo-elements */
+.carousel-dots a:first-child::before {
+  content: "◀";
+}
+.carousel-dots a:last-child::before {
+  content: "▶";
 }
 
-.carousel-arrows a:focus-visible {
-  outline: 2px solid var(--brand-teal);
-  outline-offset: 2px;
+/* Hover and focus styles */
+.carousel-dots a:hover {
+  background: var(--brand-teal-dark);
+  transform: scale(1.1);
 }
+.carousel-dots a:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 3px;
+}
+
 
 /* ============================================================
    Reduced motion preference
