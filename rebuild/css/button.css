@@ -30,3 +30,10 @@
       background: #246568;   /* darker teal on hover */
       transform: translateY(-2px);
     }
+
+.card-btn {
+  margin-top: 12px;
+  display: inline-block;
+  text-align: center;
+}
+
