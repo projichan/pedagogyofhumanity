@@ -20,7 +20,7 @@ body {
 .wrap {
   width: 100%;
   max-width: 1000px;
-  padding: 40px 16px;
+  padding: 20px 16px;
   margin: 10px auto 40px;
 }
 
@@ -29,7 +29,7 @@ body {
   max-width: 800px;
   margin: 0 auto 28px;
   background-color: rgba(44, 122, 123, 0.3); /* translucent teal tint */
-  padding: 40px;
+  padding: 20px;
   border-radius: 12px;
   text-align: center;
 }
