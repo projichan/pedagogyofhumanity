@@ -296,3 +296,24 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* Fix bullet cards on mobile: left-align copy, keep headings centered */
+@media (max-width: 640px) {
+  /* If these are inside .card blocks, this is safe: your other cards don't use <ul> */
+  .card ul { 
+    list-style: disc outside; 
+    padding-left: 1.25rem; 
+    margin: 0; 
+  }
+  .card li, 
+  .card p { 
+    text-align: left; 
+    line-height: 1.6; 
+    margin: 0.5rem 0; 
+  }
+  /* keep section titles centered */
+  .card h2 { 
+    text-align: center; 
+    margin-bottom: 0.75rem; 
+  }
+}
