@@ -254,6 +254,7 @@ footer {
 @media (max-width: 640px) {
   .pillar-card { max-width: 100%; }
 }
+}
    
 /* ===== Three-Pillar Grid (Get Started section) ===== */
 .cards-section {
