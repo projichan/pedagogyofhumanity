@@ -3,85 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
   <title>Contact • Pedagogy of Humanity</title>
   <meta name="description" content="Get in touch with Brittany L. Stratton, founder of the Pedagogy of Humanity." />
 
   <!-- Global styles -->
   <link rel="stylesheet" href="rebuild/css/base.css">
   <link rel="stylesheet" href="rebuild/css/navstyle.css">
+  <link rel="stylesheet" href="rebuild/css/page_style.css">
+  <link rel="stylesheet" href="rebuild/css/contact.css">
+  <link rel="stylesheet" href="rebuild/css/footer.css">
 
-  <!-- Page-specific styles -->
-  <style>
-    /* Base */
-    body {
-      background-color: #d6dce1;
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: stretch; /* ensure header/nav span full width */
-    }
-    header { width: 100%; }
-
-    /* Footer */
-    footer {
-      width: 100%;
-      text-align: center;
-      color: #313647;
-      font-family: Garamond, serif;
-      font-style: italic;
-      font-size: 18px;
-      padding-bottom: 96px;
-      margin-top: auto;
-    }
-
-    /* Page-specific: contact form */
-    .wrap { width:100%; max-width:540px; padding:40px 16px; margin:100px auto 40px; }
-    h1 {
-      text-align:center; color:#313647; font-family:Garamond, serif;
-      font-size:32px; margin:0 0 8px;
-    }
-    .lead {
-      text-align:center; font-family:Garamond, serif; color:#5b6277;
-      margin:0 0 24px; font-style:italic;
-    }
-    form {
-      background:#fff; border-radius:12px;
-      box-shadow:0 6px 16px rgba(0,0,0,.08);
-      padding:20px;
-    }
-    label {
-      display:block; margin:0 0 8px; font-family:Garamond, serif; color:#313647;
-    }
-    input[type="email"], input[type="text"], textarea {
-      width:100%; padding:10px; margin:0 0 16px;
-      border:1px solid #ccc; border-radius:6px; box-sizing:border-box;
-      font-size:16px; font-family:Garamond, serif;
-      background:#fff;
-    }
-    textarea { resize:vertical; min-height:140px; }
-
-    button[type="submit"] {
-      background:#2c7a7b; color:#fff; border:none;
-      padding:12px 18px; border-radius:6px; cursor:pointer;
-      font-size:16px; font-family:Garamond, serif;
-    }
-    button[type="submit"]:hover { opacity:.9; }
-section .disclaimer {
-  font-size: 0.85rem;
-  color: #4a5568;
-  text-align: center;
-  font-style: italic;
-  margin: 16px auto 0;
-  padding-top: 8px;
-  border-top: 1px solid #e2e8f0; /* light divider */
-  max-width: 500px;
-}
-  </style>
 </head>
-<body>
 
+  <body>
  <header>
     <!-- MOBILE-ONLY HAMBURGER TOGGLE (CSS-only; no JS) -->
     <details class="hamburger" aria-label="Main menu">
@@ -156,6 +91,7 @@ section .disclaimer {
   </header>
 
   <main class="wrap">
+    <div class="content-wrapper">
     <h1>Get in Touch</h1>
     <p class="lead">Have a question or idea? I’d love to hear from you.</p>
     <p><strong>Phone:</strong> <a href="tel:+16812103589">(681)-210-3589</a></p>
@@ -186,22 +122,16 @@ section .disclaimer {
   Information shared through this form does not constitute legal or medical advice.
 </p>
 </section>
+    </div>
   </main>
 
-  <footer>
-    © 2025 Brittany L. Stratton. Pedagogy of Humanity ™. All Rights Reserved.
+<footer class="site-footer">
+    <p>© 2025 Brittany L. Stratton. Pedagogy of Humanity ™. All Rights Reserved.</p>
+    <p>
+      <a href="terms_of_service.html">Terms of Service</a> |
+      <a href="privacypolicy.html">Privacy Policy</a> |
+      <a href="sitemap.xml">Site Map</a>
+    </p>
   </footer>
-
-  <!-- Optional: auto-highlight current link if you reuse this template later -->
-  <script>
-    (function(){
-      const here = location.pathname.split('/').pop() || 'index.html';
-      document.querySelectorAll('.site-nav a').forEach(a=>{
-        const href = a.getAttribute('href');
-        if (href === here) a.setAttribute('aria-current','page');
-        else a.removeAttribute('aria-current');
-      });
-    })();
-  </script>
 </body>
 </html>
