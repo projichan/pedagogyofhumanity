@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
   <title>Sample Work • Pedagogy of Humanity</title>
   <meta name="description" content="Browse showcased work" />
 
@@ -12,125 +13,10 @@
   <link rel="stylesheet" href="rebuild/css/lightbox.css">
   <link rel="stylesheet" href="rebuild/css/carousel.css">
   <link rel="stylesheet" href="rebuild/css/button.css">
-    
-
-  <!-- Page-specific -->
-  <style>
-    body {
-      background-color: #d6dce1;
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .wrap { width:100%; max-width:1200px; padding:40px 16px; margin:auto; }
-    h1 {
-      text-align:center;
-      font-family:Garamond, serif;
-      font-size:36px;
-      margin:16px 0 8px;
-      color:#313647;
-    }
-    .sub {
-      text-align:center;
-      font-style:italic;
-      color:#5b6277;
-      margin:0 0 28px;
-      font-family:Garamond, serif;
-    }
-
-    /* Grid of samples */
-    .grid {
-      display:grid;
-      grid-template-columns:repeat(auto-fit, minmax(240px,1fr));
-      gap:20px;
-    }
-    .card {
-      background:#fff;
-      border-radius:12px;
-      box-shadow:0 6px 16px rgba(0,0,0,.08);
-      overflow:hidden;
-      transition:transform .18s ease, box-shadow .18s ease;
-      text-align:center;
-    }
-    .card:hover {
-      transform:translateY(-2px);
-      box-shadow:0 10px 24px rgba(0,0,0,.12);
-    }
-    .thumb {
-      width:100%;
-      aspect-ratio:4/3;
-      overflow:hidden;
-      background:#e9edf0;
-    }
-    .thumb img {
-      width:100%;
-      height:100%;
-      object-fit:contain;
-      display:block;
-    }
-    .card h3 {
-      margin:12px 0;
-      font-family:Garamond, serif;
-      font-size:20px;
-      color:#313647;
-    }
-    .card a {
-      display:inline-block;
-      margin-bottom:16px;
-      font-size:16px;
-      color:#2c7a7b;
-      text-decoration:underline;
-    }
-
-    /* CTA button */
-    .cta-wrap {
-      text-align: center;
-      margin: 40px 0 20px;
-    }
-    .cta-button {
-      display: inline-block;
-      background: #2c7a7b;   /* brand teal */
-      color: #fff;
-      font-family: Garamond, serif;
-      font-size: 20px;
-      padding: 14px 32px;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background .3s ease, transform .2s ease;
-    }
-    .cta-button:hover {
-      background: #246568;   /* darker teal on hover */
-      transform: translateY(-2px);
-    }
-
-    @media (max-width:640px) {
-      h1 { font-size:28px; }
-      .sub { font-size:16px; }
-      .cta-button {
-        display:block;
-        width:100%;
-        max-width:300px;
-        margin:0 auto;
-      }
-    }
-
-    footer {
-      width: 100%;
-      text-align: center;
-      color: #313647;
-      font-family: Garamond, serif;
-      font-style: italic;
-      font-size: 18px;
-      padding-bottom: 96px;
-      margin-top: auto;
-    }
-  </style>
+  <link rel="stylesheet" href="rebuild/css/page_style.css">
 </head>
-<body>
+
+  <body>
    <header>
     <!-- MOBILE-ONLY HAMBURGER TOGGLE (CSS-only; no JS) -->
     <details class="hamburger" aria-label="Main menu">
@@ -170,7 +56,7 @@
       <span>Work With Us</span>
     </summary>
     <div class="submenu" role="menu" aria-label="Work With Us">
-      <a role="menuitem" href="services.html">Get Started</a>
+      <a role="menuitem" href="get_started.html">Get Started</a>
         <a role="menuitem" href="sample_work.html">Sample Works</a>
       <a role="menuitem" href="families.html">For Families</a>
       <a role="menuitem" href="organizations.html">For Organizations</a>
@@ -595,11 +481,16 @@
 
      <!-- CTA Button -->
     <div class="cta-wrap">
-      <a class="cta-button" href="booking.html">Request Help Today</a>
+      <a class="cta-button" href="booking.html">Book a Conversation</a>
     </div>
 
-  <footer>
-    © 2025 Brittany L. Stratton. Pedagogy of Humanity ™. All Rights Reserved.
+  <footer class="site-footer">
+    <p>© 2025 Brittany L. Stratton. Pedagogy of Humanity ™. All Rights Reserved.</p>
+    <p>
+      <a href="terms_of_service.html">Terms of Service</a> |
+      <a href="privacypolicy.html">Privacy Policy</a> |
+      <a href="sitemap.xml">Site Map</a>
+    </p>
   </footer>
 </body>
-</html>
+  </html>
