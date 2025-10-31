@@ -304,23 +304,25 @@ footer {
 /* ===============================
    Growing Brain Certified Badge
    =============================== */
+/* Center the badge block itself */
 .badge-link {
-  display: inline-block;
+  display: block;
+  width: 100%;
   text-align: center;
+  margin: 40px 0;
 }
 
+/* Style the image nicely */
 .badge-image {
   max-width: 200px;
   height: auto;
-  display: block;
-  margin: 30px auto;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: inline-block; /* inline-block allows text-align: center to work */
+  transition: transform 0.2s ease, filter 0.2s ease;
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));
 }
 
-/* Subtle hover lift */
+/* Gentle hover animation */
 .badge-image:hover {
   transform: scale(1.05);
   filter: drop-shadow(0 4px 6px rgba(0,0,0,0.25));
 }
-
